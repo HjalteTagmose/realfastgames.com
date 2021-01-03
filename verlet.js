@@ -536,6 +536,7 @@ function loadImage(url)
 {
     var img = document.createElement("img");
     img.src = url;
+    img.loading = 'lazy';
     return img;
 }
 
