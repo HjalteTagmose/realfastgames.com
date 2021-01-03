@@ -41,6 +41,103 @@
         {
             "name": "Defuser 4000",
             "imgPath": "thumbnails/defuser4000.png"
+        },
+        {
+            "name": "Aquanaut",
+            "imgPath": "thumbnails/aquanaut.png"
+        },
+        {
+            "name": "The Blind Burglar",
+            "imgPath": "thumbnails/blindburglar-thumb.png"
+        },
+        {
+            "name": "Cat Tales",
+            "imgPath": "thumbnails/cat-tale.png"
+        },
+        {
+            "name": "Despot Dungeons",
+            "imgPath": "thumbnails/despot-dungeons.png"
+        },
+        {
+            "name": "Escape from Finger Castle.png",
+            "imgPath": "thumbnails/finger-castle.png"
+        },
+        {
+            "name": "Fractal City",
+            "imgPath": "thumbnails/fractal.png"
+        },
+        {
+            "name": "The Quest for the Golden Sword",
+            "imgPath": "thumbnails/golden-sword.png"
+        },
+        {
+            "name": "Houdini Plumbing",
+            "imgPath": "thumbnails/houdini-plumb.png"
+        },
+        {
+            "name": "Late Fee",
+            "imgPath": "thumbnails/latefee.png"
+        },
+        {
+            "name": "Last Minute Assignment",
+            "imgPath": "thumbnails/lma.png"
+        },
+        {
+            "name": "Mirror",
+            "imgPath": "thumbnails/mirror.png"
+        },
+        {
+            "name": "Necro Chasm",
+            "imgPath": "thumbnails/necro-chasm.png"
+        },
+        {
+            "name": "The Neverending Fountain of Puke",
+            "imgPath": "thumbnails/neverending-puke.png"
+        },
+        {
+            "name": "Nightcrawler",
+            "imgPath": "thumbnails/nightcrawler.png"
+        },
+        {
+            "name": "Planet Hopping",
+            "imgPath": "thumbnails/planethopping.png"
+        },
+        {
+            "name": "Dimension Tau",
+            "imgPath": "thumbnails/tau.png"
+        },
+        {
+            "name": "The Replacement",
+            "imgPath": "thumbnails/thereplacement.png"
+        },
+        {
+            "name": "Transmogrifier",
+            "imgPath": "thumbnails/transmogrifier.png"
+        },
+        {
+            "name": "The Story of a Ministry of Truth Employee",
+            "imgPath": "thumbnails/truth-employee.png"
+        },
+        {
+            "name": "Voidlings",
+            "imgPath": "thumbnails/voidlings.png"
+        },
+        {
+            "name": "Snowball & The Yeti",
+            "imgPath": "thumbnails/snowball-yeti.png"
+        },
+        {
+            "name": "Dancers of Rhythm Castle",
+            "imgPath": "thumbnails/rhythm-castle.png"
+        },
+        {
+            "name": "A Message Home in the Police State of Denmark",
+            "imgPath": "thumbnails/police-state.png",
+            "size": 50
+        },
+        {
+            "name": "VR King",
+            "imgPath": "thumbnails/vrking.png"
         }
     ]
 }
