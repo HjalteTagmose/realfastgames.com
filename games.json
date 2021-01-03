@@ -1,0 +1,46 @@
+{
+    "defaultSize": 150,
+    "boxes": 
+    [
+        {
+            "name": "Hitch Bird",
+            "imgPath": "thumbnails/hitch.png"
+        },
+        {
+            "name": "Ski Racer",
+            "imgPath": "thumbnails/skiracer.png"
+        },
+        {
+            "name": "Astro Tube",
+            "imgPath": "thumbnails/astrotube.png"
+        },
+        {
+            "name": "ASCII Space Commander",
+            "imgPath": "thumbnails/asciispacecmd.png"
+        },
+        {
+            "name": "Daffodil Village",
+            "imgPath": "thumbnails/daffodil.png"
+        },
+        {
+            "name": "Hack & Drive",
+            "imgPath": "thumbnails/hack-drive.png"
+        },
+        {
+            "name": "The Replacement",
+            "imgPath": "thumbnails/thereplacement.png"
+        },
+        {
+            "name": "Shipping Schrödringers Cat",
+            "imgPath": "thumbnails/ship-cat.png"
+        },
+        {
+            "name": "Robo Drainer",
+            "imgPath": "thumbnails/robo-drainer.png"
+        },
+        {
+            "name": "Defuser 4000",
+            "imgPath": "thumbnails/defuser4000.png"
+        }
+    ]
+}

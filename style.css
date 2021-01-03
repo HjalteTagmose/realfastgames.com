@@ -1,0 +1,19 @@
+#wrapper
+{
+    position:relative;    
+}
+
+#canvas
+{
+    background-color:transparent; 
+    position:absolute;
+    z-index:1;
+}
+#shadowCanvas
+{
+    background-color:#f5fbff;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:0;
+}
