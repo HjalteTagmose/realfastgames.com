@@ -11,90 +11,18 @@ var sCanvas = document.getElementById("shadowCanvas");
 var sContext= sCanvas.getContext("2d");
 sCanvas.width = width;
 sCanvas.height = height;
-var logo = loadImage("realfast.png");
+var logo;
+loadImage("realfast.png").then(img => logo = img);
 
 var points = [];
 var sticks = [];
 var boxes  = [];
 
 var colInfo  = { normal: {x:0,y:0} };
-var mousePos = { x: 0, y: 0 };
-var selected = null;
 
 var bounce = 0.9;
 var gravity = 0.5;
 var friction = 0.999;
-
-window.onmousedown = function(e)
-{
-    for (let i = 0; i < boxes.length; i++)
-    {
-        var b = boxes[i];
-        if (contains(b, mousePos.x, mousePos.y))
-        {
-            console.log(b.name);
-            selected = b;
-        }
-    }
-}
-
-window.onmousemove = function(e)
-{
-    getMouse(e);
-
-    if (selected != null)
-    {
-        moveToPos(selected, mousePos.x, mousePos.y);
-    }
-}
-
-window.onmouseup = function(e)
-{
-    pinBox(selected, false);
-    selected = null;
-}
-
-function moveToPos(box, x, y)
-{
-    pinBox(box, true);
-    box.path.forEach(p => {
-        p.oldx = p.x;
-        p.oldy = p.y;
-    });
-    box.path[0].x = x - box.size/2;
-    box.path[0].y = y - box.size/2;
-    box.path[1].x = x + box.size/2;
-    box.path[1].y = y - box.size/2;
-    box.path[2].x = x + box.size/2;
-    box.path[2].y = y + box.size/2;
-    box.path[3].x = x - box.size/2;
-    box.path[3].y = y + box.size/2;
-}
-
-function pinBox(box, pin)
-{
-    if (box == null) return;
-    box.path[0].pinned = pin;
-    box.path[1].pinned = pin;
-    box.path[2].pinned = pin;
-    box.path[3].pinned = pin;
-}
-
-function getMouse(e) 
-{
-    var rect = canvas.getBoundingClientRect();
-    var x = (e.clientX - rect.left)* 1.0;
-    var y = (e.clientY - rect.top )* 1.0;
-
-    mousePos.x = (x/rect.width)  * canvas.width; 
-    mousePos.y = (y/rect.height) * canvas.height; 
-}
-
-function contains(box, x, y)
-{
-    return  box.min.x < x && x < box.max.x &&
-            box.min.y < y && y < box.max.y;
-}
 
 window.onload = function() 
 {
@@ -531,18 +459,17 @@ function createBox(x,y,size,vel)
 
     return box;
 }
-
-function loadImage(url) 
-{
-    var img = document.createElement("img");
-    img.src = url;
-    img.loading = 'lazy';
-    return img;
-}
-
 function distance(p0, p1)
 {
     var dx = p1.x - p0.x,
         dy = p1.y - p0.y;
     return Math.sqrt(dx * dx + dy * dy);
+}
+
+
+async function loadImage(url) 
+{
+    var img = document.createElement("img");
+    img.src = url;
+    return img;
 }

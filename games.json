@@ -1,110 +1,163 @@
 {
-    "defaultSize": 150,
+    "sizeMultiplier": 1.25,
     "boxes": 
     [
         {
             "name": "Hitch Bird",
-            "imgPath": "thumbnails/hitch.png"
+            "imgPath": "thumbnails/hitch.png",
+            "link": "https://www.realfast.dk/2018/08/13/hitch-bird/"
+            
         },
         {
             "name": "Ski Racer",
-            "imgPath": "thumbnails/skiracer.png"
+            "imgPath": "thumbnails/skiracer.png",
+            "link": "https://www.realfast.dk/2019/03/27/ski-racer/",
+            "size": 110
         },
         {
             "name": "Astro Tube",
-            "imgPath": "thumbnails/astrotube.png"
+            "imgPath": "thumbnails/astrotube.png",
+            "link": "https://www.realfast.dk/2016/05/05/astro-tube/"
         },
         {
-            "name": "ASCII Space Commander",
-            "imgPath": "thumbnails/asciispacecmd.png"
+            "name": "Munchy Mammals",
+            "imgPath": "thumbnails/munchy-mammals-outlined.png",
+            "link": "https://www.realfast.dk/2021/01/05/munchy-mammals/",
+            "size": 135
         },
         {
             "name": "Daffodil Village",
-            "imgPath": "thumbnails/daffodil.png"
+            "imgPath": "thumbnails/daffodil.png",
+            "link": "https://www.realfast.dk/2017/04/24/daffodil-village/",
+            "size": 75
         },
         {
             "name": "Hack & Drive",
-            "imgPath": "thumbnails/hack-drive.png"
+            "imgPath": "thumbnails/hack-drive.png",
+            "link": "https://www.realfast.dk/2017/11/20/hack-and-drive/"
         },
         {
             "name": "The Replacement",
-            "imgPath": "thumbnails/thereplacement.png"
+            "imgPath": "thumbnails/thereplacement.png",
+            "link": "https://www.realfast.dk/2017/02/25/the-replacement/"
         },
         {
             "name": "Shipping Schrödringers Cat",
-            "imgPath": "thumbnails/ship-cat.png"
+            "imgPath": "thumbnails/ship-cat.png",
+            "link": "https://www.realfast.dk/2020/04/20/ship-cat/",
+            "size": 110
         },
         {
             "name": "Robo Drainer",
-            "imgPath": "thumbnails/robo-drainer.png"
+            "imgPath": "thumbnails/robo-drainer.png",
+            "link": "https://www.realfast.dk/2017/08/01/510/",
+            "size": 75
         },
         {
             "name": "Defuser 4000",
-            "imgPath": "thumbnails/defuser4000.png"
+            "imgPath": "thumbnails/defuser4000.png",
+            "link": "https://www.realfast.dk/2015/12/15/defuser-4000/"
         },
         {
             "name": "Aquanaut",
-            "imgPath": "thumbnails/aquanaut.png"
+            "imgPath": "thumbnails/aquanaut.png",
+            "link": "https://www.realfast.dk/2020/02/02/aquanaut/"
+        },
+        {
+            "name": "ASCII Space Commander",
+            "imgPath": "thumbnails/asciispacecmd.png",
+            "link": "https://www.realfast.dk/2018/04/24/695/"
         },
         {
             "name": "The Blind Burglar",
-            "imgPath": "thumbnails/blindburglar-thumb.png"
+            "imgPath": "thumbnails/blindburglar-thumb.png",
+            "link": "https://www.realfast.dk/2017/01/22/the-blind-burglar/",
+            "size": 75
         },
         {
             "name": "Cat Tales",
-            "imgPath": "thumbnails/cat-tale.png"
+            "imgPath": "thumbnails/cat-tale.png",
+            "link": "https://www.realfast.dk/2018/03/23/cat-tales/",
+            "size": 75
         },
         {
             "name": "Despot Dungeons",
-            "imgPath": "thumbnails/despot-dungeons.png"
+            "imgPath": "thumbnails/despot-dungeons.png",
+            "link": "https://www.realfast.dk/2017/10/02/despot-dungeons/",
+            "size": 135
         },
         {
             "name": "Escape from Finger Castle.png",
-            "imgPath": "thumbnails/finger-castle.png"
+            "imgPath": "thumbnails/finger-castle.png",
+            "link": "https://www.realfast.dk/2016/10/10/escape-from-finger-castle/"
         },
         {
             "name": "Fractal City",
-            "imgPath": "thumbnails/fractal.png"
+            "imgPath": "thumbnails/fractal.png",
+            "link": "https://www.realfast.dk/2019/04/11/fractal-city/"
+        },
+        {
+            "name": "Hjalte Tagmose",
+            "imgPath": "thumbnails/me.png",
+            "link": "https://www.realfast.dk/about/",
+            "size": 80
+        },
+        {
+            "name": "Twitter",
+            "imgPath": "thumbnails/twitter.png",
+            "link": "https://twitter.com/hjaltetagmose",
+            "size": 80
         },
         {
             "name": "The Quest for the Golden Sword",
-            "imgPath": "thumbnails/golden-sword.png"
+            "imgPath": "thumbnails/golden-sword.png",
+            "link": "https://www.realfast.dk/2014/12/16/the-quest-for-the-golden-sword/"
         },
         {
             "name": "Houdini Plumbing",
-            "imgPath": "thumbnails/houdini-plumb.png"
+            "imgPath": "thumbnails/houdini-plumb.png",
+            "link": "https://www.realfast.dk/2016/04/11/123/"
         },
         {
             "name": "Late Fee",
-            "imgPath": "thumbnails/latefee.png"
+            "imgPath": "thumbnails/latefee.png",
+            "link": "https://www.realfast.dk/2016/08/30/the-late-fee/"
         },
         {
             "name": "Last Minute Assignment",
-            "imgPath": "thumbnails/lma.png"
+            "imgPath": "thumbnails/lma.png",
+            "link": "https://www.realfast.dk/2017/06/21/last-minute-assignment/"
         },
         {
             "name": "Mirror",
-            "imgPath": "thumbnails/mirror.png"
+            "imgPath": "thumbnails/mirror.png",
+            "link": "https://www.realfast.dk/2013/06/20/mirror/"
         },
         {
             "name": "Necro Chasm",
-            "imgPath": "thumbnails/necro-chasm.png"
+            "imgPath": "thumbnails/necro-chasm.png",
+            "link": "https://www.realfast.dk/2014/12/09/necro-chasm/"
         },
         {
             "name": "The Neverending Fountain of Puke",
-            "imgPath": "thumbnails/neverending-puke.png"
+            "imgPath": "thumbnails/neverending-puke.png",
+            "link": "https://www.realfast.dk/2015/04/21/the-neverending-fountain-of-puke/"
         },
         {
             "name": "Nightcrawler",
-            "imgPath": "thumbnails/nightcrawler.png"
+            "imgPath": "thumbnails/nightcrawler.png",
+            "link": "https://www.realfast.dk/2015/08/25/nightcrawler/"
         },
         {
             "name": "Planet Hopping",
-            "imgPath": "thumbnails/planet-hopping.png"
+            "imgPath": "thumbnails/planet-hopping.png",
+            "link": "https://www.realfast.dk/2020/10/05/planet-hopping/",
+            "size": 110
         },
         {
             "name": "Dimension Tau",
-            "imgPath": "thumbnails/tau.png"
+            "imgPath": "thumbnails/tau.png",
+            "link": "https://www.realfast.dk/2014/08/26/enter-dimension-tau/"
         },
         {
             "name": "The Replacement",
@@ -112,32 +165,46 @@
         },
         {
             "name": "Transmogrifier",
-            "imgPath": "thumbnails/transmogrifier.png"
+            "imgPath": "thumbnails/transmogrifier.png",
+            "link": "https://www.realfast.dk/2016/04/19/the-transmogrifier/"
         },
         {
             "name": "The Story of a Ministry of Truth Employee",
-            "imgPath": "thumbnails/truth-employee.png"
+            "imgPath": "thumbnails/truth-employee.png",
+            "link": "https://www.realfast.dk/2016/12/12/the-story-of-a-ministry-of-truth-employee/"
         },
         {
             "name": "Voidlings",
-            "imgPath": "thumbnails/voidlings.png"
+            "imgPath": "thumbnails/voidlings.png",
+            "link": "https://www.realfast.dk/2019/05/01/voidlings/",
+            "size": 110
         },
         {
             "name": "Snowball & The Yeti",
-            "imgPath": "thumbnails/snowball-yeti.png"
+            "imgPath": "thumbnails/snowball-yeti.png",
+            "link": "https://www.realfast.dk/2020/02/23/snowman-the-yeti/"
         },
         {
             "name": "Dancers of Rhythm Castle",
-            "imgPath": "thumbnails/rhythm-castle.png"
+            "imgPath": "thumbnails/rhythm-castle.png",
+            "link": "https://www.realfast.dk/2018/07/03/dancers-of-rhythm-castle/"
         },
         {
             "name": "A Message Home in the Police State of Denmark",
             "imgPath": "thumbnails/police-state.png",
-            "size": 50
+            "link": "https://www.realfast.dk/2018/01/28/a-message-home-in-the-police-state-of-denmark/",
+            "size": 75
         },
         {
             "name": "VR King",
-            "imgPath": "thumbnails/vrking.png"
+            "imgPath": "thumbnails/vrking.png",
+            "link": "https://www.realfast.dk/2016/01/31/vr-king/"
+        },
+        {
+            "name": "Hackerman",
+            "imgPath": "thumbnails/hackerman.png",
+            "link": "https://www.realfast.dk/2019/01/03/codename-hackerman/",
+            "size": 110
         }
     ]
 }
