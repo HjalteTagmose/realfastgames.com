@@ -2,15 +2,19 @@
 // https://bitbucket.org/craigmit/verlet/src/master/
 // https://www.youtube.com/watch?v=3HjO_RGIjCU
 
+// CANVAS
 var canvas  = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var width   = canvas.width  = window.innerWidth  - 8;
 var height  = canvas.height = window.innerHeight - 8;
 
+// SECONDARY CANVAS (SHADOW)
 var sCanvas = document.getElementById("shadowCanvas");
 var sContext= sCanvas.getContext("2d");
 sCanvas.width = width;
 sCanvas.height = height;
+
+// LOGO
 var logo;
 loadImage("realfast.png").then(img => logo = img);
 
@@ -23,6 +27,12 @@ var colInfo  = { normal: {x:0,y:0} };
 var bounce = 0.9;
 var gravity = 0.5;
 var friction = 0.999;
+
+window.onresize = function()
+{
+    width  = canvas.width  = sCanvas.width  = window.innerWidth  - 8;
+    height = canvas.height = sCanvas.height = window.innerHeight - 8;
+}
 
 window.onload = function() 
 {
@@ -102,7 +112,7 @@ window.onload = function()
             b.center.y = (b.path[0].y + b.path[1].y + b.path[2].y + b.path[3].y) / 4;
             
             var max = { x:-100000, y:-100000 }
-            var min = { x:100000, y:100000 }
+            var min = { x: 100000, y: 100000 }
             
             for (let j = 0; j < b.path.length; j++) 
             {
@@ -129,6 +139,9 @@ window.onload = function()
         sContext.shadowOffsetX = 20;
         sContext.shadowOffsetY = 20;
         sContext.fillStyle = "#042840";
+
+        // GAMEHOLE
+        gameHole.render(context)
 
         // BACKGROUND
         var logoInvAspect = logo.height / logo.width;
@@ -160,7 +173,7 @@ window.onload = function()
             context.save();
             context.translate(b.path[0].x, b.path[0].y);
             context.rotate(angle);
-            context.drawImage(b.img, 0, 0, w, h);
+            context.drawImage(b.game.img, 0, 0, w, h);
             context.restore();
 
             //renderDebug(b);
@@ -464,12 +477,4 @@ function distance(p0, p1)
     var dx = p1.x - p0.x,
         dy = p1.y - p0.y;
     return Math.sqrt(dx * dx + dy * dy);
-}
-
-
-async function loadImage(url) 
-{
-    var img = document.createElement("img");
-    img.src = url;
-    return img;
 }

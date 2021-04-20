@@ -16,14 +16,9 @@ async function parseJSON(data)
         var box = createBox(
             pos.x, pos.y, size, rnd
         ); i++;
-        await loadImage(game.imgPath).then(img => box.img = img);
-        box.name = game.name;
-        box.link = game.link;
+        await loadImage(game.imgPath).then(img => game.img = img);
+        box.game = game;
     });
-}
-
-async function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 var mousePos = { x: 0, y: 0 };
@@ -44,7 +39,7 @@ function startDrag(e)
         var b = boxes[i];
         if (contains(b, mousePos.x, mousePos.y))
         {
-            console.log(b.name);
+            console.log(b.game.name);
             selected = b;
         }
     }
@@ -60,20 +55,25 @@ function drag(e)
 
 function stopDrag(e)
 {
+    // Assumes gamehole is in topleft corner
+    if (mousePos.x < gameHole.width && 
+        mousePos.y < gameHole.height)
+        gameHole.eat(selected)
+    
     pinBox(selected, false);
     selected = null;
 }
 
 function click(e)
 {
-    if (e.detail == 2)
+    if (e.detail == 1)
     {
         for (let i = 0; i < boxes.length; i++)
         {
             var b = boxes[i];
             if (contains(b, mousePos.x, mousePos.y))
             {
-                window.open(b.link,'_blank');
+                // window.open(b.game.link,'_blank');
             }
         }
     }
@@ -81,6 +81,8 @@ function click(e)
 
 function moveToPos(box, x, y)
 {
+    box.x = x
+    box.y = y
     pinBox(box, true);
     box.path.forEach(p => {
         p.oldx = p.x;
@@ -112,7 +114,7 @@ function getMouse(e)
     var y = (e.clientY - rect.top )* 1.0;
 
     mousePos.x = (x/rect.width)  * canvas.width; 
-    mousePos.y = (y/rect.height) * canvas.height; 
+    mousePos.y = (y/rect.height) * canvas.height;
 }
 
 function getTouch(e) 
