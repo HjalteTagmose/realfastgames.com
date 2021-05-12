@@ -133,15 +133,13 @@ window.onload = function()
     {
         context.clearRect(0,0,width,height);
         sContext.clearRect(0,0,width,height);
-
+        
+        // SHADOWS
         sContext.shadowColor = '#889299';
         sContext.shadowBlur = 20;
         sContext.shadowOffsetX = 20;
         sContext.shadowOffsetY = 20;
         sContext.fillStyle = "#042840";
-
-        // GAMEHOLE
-        gameHole.render(context)
 
         // BACKGROUND
         var logoInvAspect = logo.height / logo.width;
@@ -149,9 +147,13 @@ window.onload = function()
             bgW = sCanvas.width;
         var bgX = (sCanvas.width  - bgW) * 0.5, 
             bgY = (sCanvas.height - bgH) * 0.5;
+
+        // GAMEHOLE
+        
         sContext.restore();
         sContext.save();
         sContext.shadowColor = "transparent";
+        gameHole.render(sContext)
         sContext.drawImage( logo, bgX, bgY, bgW, bgH);
         sContext.restore();
 
@@ -174,6 +176,12 @@ window.onload = function()
             context.translate(b.path[0].x, b.path[0].y);
             context.rotate(angle);
             context.drawImage(b.game.img, 0, 0, w, h);
+            if (b.game.puke > 0)
+            {
+                b.game.puke -= 0.005;
+                context.fillStyle = 'rgba(189, 224, 101,' + (b.game.puke) + ')';
+                context.fillRect(0,0,w,h);
+            }
             context.restore();
 
             //renderDebug(b);
