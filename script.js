@@ -55,9 +55,7 @@ function drag(e)
 
 function stopDrag(e)
 {
-    // Assumes gamehole is in topleft corner
-    if (mousePos.x < gameHole.width && 
-        mousePos.y < gameHole.height)
+    if (gameHole.contains(mousePos.x, mousePos.y))
         gameHole.eat(selected)
     
     pinBox(selected, false);

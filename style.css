@@ -19,3 +19,15 @@
     left:0px;
     z-index:0;
 }
+
+#speechBubble
+{
+    z-index: 1;
+    position:absolute; 
+    top: 20%; bottom: 20%;
+    left: 25%; right: 25%;
+    border-radius: 25px;
+    background: white;
+    padding: 20px;
+    box-shadow: 20px 20px 20px #889299;
+}

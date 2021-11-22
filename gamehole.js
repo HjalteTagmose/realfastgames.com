@@ -1,10 +1,26 @@
 var curGame = null
 var gameHole =
 {
-    width : 150,
-    height: 150,
-    render: function(ctx) {
-        ctx.drawImage(this.img, 0, 10, 300, 300);
+    x:0,
+    y:0,
+    width : 300,
+    height: 300,
+    render: function(ctx, x, y) {
+        var offsetX = this.width/2
+        this.x = x-offsetX
+        this.y = y
+        ctx.drawImage(this.img, this.x, this.y, this.width, this.height)
+        this.renderSpeechBubble(ctx, x-offsetX, y+this.height)
+    },
+    renderSpeechBubble: function(ctx, x, y) {
+        ctx.fillStyle = '#FF00FF'
+        ctx.fillRect(x, y, 300, 300);
+    },
+    contains: function(x, y) {
+        return  x < this.width  + this.x && 
+                y < this.height + this.y &&
+                x > this.x && 
+                y > this.y 
     },
     eat: function(box) {
         eatGame(box.game);

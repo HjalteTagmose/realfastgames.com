@@ -3,10 +3,14 @@
     "boxes": 
     [
         {
+            "name": "Ballz",
+            "imgPath": "thumbnails/ballz.png",
+            "link": "https://www.realfast.dk/2021/08/02/ballz/"
+        },
+        {
             "name": "Hitch Bird",
             "imgPath": "thumbnails/hitch.png",
             "link": "https://www.realfast.dk/2018/08/13/hitch-bird/"
-            
         },
         {
             "name": "Ski Racer",

@@ -131,31 +131,32 @@ window.onload = function()
 
     function render()
     {
-        context.clearRect(0,0,width,height);
+        context.clearRect( 0,0,width,height);
         sContext.clearRect(0,0,width,height);
         
         // SHADOWS
-        sContext.shadowColor = '#889299';
-        sContext.shadowBlur = 20;
-        sContext.shadowOffsetX = 20;
-        sContext.shadowOffsetY = 20;
-        sContext.fillStyle = "#042840";
+        sContext.shadowColor = '#889299'
+        sContext.fillStyle   = '#042840'
+        sContext.shadowBlur    = 20
+        sContext.shadowOffsetX = 20
+        sContext.shadowOffsetY = 20
 
         // BACKGROUND
-        var logoInvAspect = logo.height / logo.width;
+        var logoInvAspect = logo.height / logo.width
         var bgH = sCanvas.width * logoInvAspect,
-            bgW = sCanvas.width;
+            bgW = sCanvas.width
         var bgX = (sCanvas.width  - bgW) * 0.5, 
-            bgY = (sCanvas.height - bgH) * 0.5;
+            bgY = (sCanvas.height - bgH) * 0.5
+
+        var xxx = width/2
 
         // GAMEHOLE
-        
-        sContext.restore();
-        sContext.save();
-        sContext.shadowColor = "transparent";
-        gameHole.render(sContext)
-        sContext.drawImage( logo, bgX, bgY, bgW, bgH);
-        sContext.restore();
+        sContext.restore()
+        sContext.save()
+        sContext.shadowColor = "transparent"
+        gameHole.render(sContext, xxx, 10)
+        sContext.drawImage( logo, bgX, bgY, bgW, bgH)
+        sContext.restore()
 
         for (let i = 0; i < boxes.length; i++)
         {
