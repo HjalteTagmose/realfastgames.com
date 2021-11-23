@@ -5,6 +5,7 @@
         asdasi jdaso dj<a href="jaaj">dude</a>d asd as<a href="jeej">bro</a> df
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="util.js"></script>
     <script>
         var typewriter = document.querySelector('#typewriter');
         var rawText = typewriter.innerHTML
@@ -13,10 +14,6 @@
         const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
         const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');
         typewriter.innerHTML = "";
-            
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
 
         async function startWrite() {
             let match

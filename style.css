@@ -22,6 +22,7 @@
 
 #speechBubble
 {
+    display: block;
     z-index: 1;
     position:absolute; 
     top: 20%; bottom: 20%;

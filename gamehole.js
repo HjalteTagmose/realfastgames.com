@@ -1,20 +1,23 @@
+var speechBubble = document.getElementById("speechBubble");
+
 var curGame = null
 var gameHole =
 {
     x:0,
     y:0,
-    width : 300,
-    height: 300,
+    talkOffset:0,
+    width : 200,
+    height: 200,
     render: function(ctx, x, y) {
         var offsetX = this.width/2
         this.x = x-offsetX
         this.y = y
-        ctx.drawImage(this.img, this.x, this.y, this.width, this.height)
-        this.renderSpeechBubble(ctx, x-offsetX, y+this.height)
+        ctx.drawImage(this.top, this.x, this.y, this.width, this.height)
+        ctx.drawImage(this.bottom, this.x, this.y+this.talkOffset, this.width, this.height)
+        this.renderSpeechBubble()
     },
-    renderSpeechBubble: function(ctx, x, y) {
-        ctx.fillStyle = '#FF00FF'
-        ctx.fillRect(x, y, 300, 300);
+    renderSpeechBubble: function() {
+        speechBubble.style = "display: block;";
     },
     contains: function(x, y) {
         return  x < this.width  + this.x && 
@@ -30,7 +33,8 @@ var gameHole =
     }
 }
 
-loadImage("gamehole.png").then(img => gameHole.img = img);
+loadImage("metop.png").then(img => gameHole.top = img);
+loadImage("mebottom.png").then(img => gameHole.bottom = img);
 
 function eatGame(game) 
 {  
