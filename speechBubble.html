@@ -2,14 +2,18 @@
 <html>
 <body style="background-color: white;" class="bubbleBody">
     <div id="typewriter">
-        asdasi jdaso dj<a href="jaaj">dude</a>d asd as<a href="jeej">bro</a> df
+        Hello Mortal!
+        I'm the keeper of this website! 
+        What do you want?
+    
+        <a href="jaaj">Tell me about gamejams</a>d asd as<a href="jeej">bro</a> df
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="util.js"></script>
     <script>
         var typewriter = document.querySelector('#typewriter');
         var rawText = typewriter.innerHTML
-        var speed = 100;    
+        var speed = 30;    
         var l = 0
         const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
         const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');

@@ -14,6 +14,12 @@ var sContext= sCanvas.getContext("2d");
 sCanvas.width = width;
 sCanvas.height = height;
 
+// ANIMATION
+var d = new Date();
+const startTime = d.getTime()
+var lastTime  = startTime
+var curTime   = startTime
+
 // LOGO
 var logo;
 loadImage("realfast.png").then(img => logo = img);
@@ -130,10 +136,16 @@ window.onload = function()
     }
 
     function render()
-    {
+    {   
         context.clearRect( 0,0,width,height);
         sContext.clearRect(0,0,width,height);
-        
+
+        // ANIMATION
+        d = new Date()
+        curTime = d.getTime()
+        var deltaTime = (curTime-lastTime) / 1000
+        lastTime = curTime
+                
         // SHADOWS
         sContext.shadowColor = '#889299'
         sContext.fillStyle   = '#042840'
@@ -154,6 +166,7 @@ window.onload = function()
         sContext.restore()
         sContext.save()
         sContext.shadowColor = "transparent"
+        gameHole.animate(deltaTime)
         gameHole.render(sContext, xxx, 10)
         sContext.drawImage( logo, bgX, bgY, bgW, bgH)
         sContext.restore()

@@ -5,16 +5,81 @@ var gameHole =
 {
     x:0,
     y:0,
-    talkOffset:0,
+    offsetX:0,
+    offsetY:0,
     width : 200,
     height: 200,
+    talkSpeed: 100,
+    mouthPos:0,
+    mouthOpen: false,
+    moveSpeed: 2,
+    moveRight: false,
+    t: 0,
     render: function(ctx, x, y) {
-        var offsetX = this.width/2
-        this.x = x-offsetX
-        this.y = y
+        mid = this.width/2
+        this.x = x-this.offsetX-mid
+        this.y = y-this.offsetY
         ctx.drawImage(this.top, this.x, this.y, this.width, this.height)
-        ctx.drawImage(this.bottom, this.x, this.y+this.talkOffset, this.width, this.height)
+        ctx.drawImage(this.bottom, this.x, this.y+this.mouthPos, this.width, this.height)
         this.renderSpeechBubble()
+    },
+    animate: function(dt) {
+        // this.shake(dt)
+        // this.talk(dt)
+    },
+    center: function(dt) {
+        this.offsetX = lerp(this.offsetX, -this.offsetX, dt)
+    },
+    idle: function(dt) {
+        dt = dt * this.moveSpeed
+        if (!this.moveRight)
+        {
+            this.offsetX = lerp(this.offsetX, -100, dt)
+            if (this.offsetX < -45)
+            {
+                this.moveRight = true;
+                console.log("go right")   
+            }
+        }
+        else
+        {
+            this.offsetX = lerp(this.offsetX, 100, dt)
+            if (this.offsetX > 45)
+            {
+                this.moveRight = false;
+                console.log("go left") 
+            }
+        }
+    },
+    talk: function(dt) {
+        dt = dt * this.talkSpeed
+        if (!this.mouthOpen)
+        {
+            this.mouthPos += dt
+            if (this.mouthPos > 10)
+                this.mouthOpen = true;
+        }
+        else
+        {
+            this.mouthPos -= dt
+            if (this.mouthPos < 0)
+                this.mouthOpen = false;
+        }
+    },
+    shake: function(dt) {
+        this.t += dt
+        if (this.t > 0.05) 
+        {
+            this.setMouth(!this.mouthOpen)
+            point = rndPointInCircle(10,0,0)
+            this.offsetX = point.x
+            this.offsetY = point.y
+            this.t = 0
+        }
+    },
+    setMouth: function(open) {
+        this.mouthOpen = open
+        this.mouthPos = open ? 20 : 0  
     },
     renderSpeechBubble: function() {
         speechBubble.style = "display: block;";
