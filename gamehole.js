@@ -1,4 +1,4 @@
-var speechBubble = document.getElementById("speechBubble");
+var speechBubble = document.getElementById("speechdiv");
 
 var curGame = null
 var gameHole =
@@ -9,23 +9,25 @@ var gameHole =
     offsetY:0,
     width : 200,
     height: 200,
-    talkSpeed: 100,
+    talkSpeed: 150,
     mouthPos:0,
     mouthOpen: false,
     moveSpeed: 2,
     moveRight: false,
     t: 0,
+    speechOn : true,
     render: function(ctx, x, y) {
         mid = this.width/2
         this.x = x-this.offsetX-mid
         this.y = y-this.offsetY
         ctx.drawImage(this.top, this.x, this.y, this.width, this.height)
         ctx.drawImage(this.bottom, this.x, this.y+this.mouthPos, this.width, this.height)
-        this.renderSpeechBubble()
     },
     animate: function(dt) {
         // this.shake(dt)
-        // this.talk(dt)
+        if(isTyping) this.talk(dt)
+        else this.setMouth(false)
+        // this.center(dt);
     },
     center: function(dt) {
         this.offsetX = lerp(this.offsetX, -this.offsetX, dt)
@@ -81,8 +83,12 @@ var gameHole =
         this.mouthOpen = open
         this.mouthPos = open ? 20 : 0  
     },
-    renderSpeechBubble: function() {
-        speechBubble.style = "display: block;";
+    toggleSpeech: function() {
+        this.speechOn = !this.speechOn;
+        speechBubble.style = this.speechOn ? "display: block;" : "display: none;";
+    },
+    loadSpeech: function(file){
+
     },
     contains: function(x, y) {
         return  x < this.width  + this.x && 
@@ -91,7 +97,8 @@ var gameHole =
                 y > this.y 
     },
     eat: function(box) {
-        eatGame(box.game);
+        if (box != null)
+            eatGame(box.game);
     },
     puke: function() {
         pukeGame();

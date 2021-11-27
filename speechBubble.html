@@ -1,63 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body style="background-color: white;" class="bubbleBody">
-    <div id="typewriter">
+    <div id="intro" style="display: none">
         Hello Mortal!
         I'm the keeper of this website! 
         What do you want?
     
         <a href="jaaj">Tell me about gamejams</a>d asd as<a href="jeej">bro</a> df
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="util.js"></script>
-    <script>
-        var typewriter = document.querySelector('#typewriter');
-        var rawText = typewriter.innerHTML
-        var speed = 30;    
-        var l = 0
-        const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
-        const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');
-        typewriter.innerHTML = "";
-
-        async function startWrite() {
-            let match
-            var links = []
-            const matches = rawText.matchAll(linkRegex)
-            for (const match of matches) {
-                console.log(match.groups.link + " - " + match.groups.text)
-                links.push( { 
-                    Text :  match.groups.text,
-                    Link :  match.groups.link } )
-            }
-
-            const texts = rawText.split(textRegex)
-            for (let i = 0; i < texts.length-1; i++) 
-            {
-                const txt = texts[i]
-                const lnk = links[i]
-                await typeText(txt)
-                await typeLink(lnk.Text, lnk.Link)
-            }
-            await typeText(texts[texts.length-1])
-        }
-
-        async function typeText(text) {
-            for (let i = 0; i < text.length; i++) {
-                await sleep(speed).then( () => { $("#typewriter").append(text.charAt(i)) })
-            } 
-        }
-
-        async function typeLink(text, link) {
-            $("#typewriter").append("<a href='"+link+"' id='c"+l+"'></a>")
-            for (let i = 0; i < text.length; i++) {
-                await sleep(speed).then( () => { $("#c"+l).append(text.charAt(i)) })
-            }
-            l++;
-        }   
-        
-        jQuery(document).ready(function() {
-            setTimeout(startWrite, 300);
-        });
-    </script>
+    <div id="typewriter">
+    </div>
 </body>
 </html>

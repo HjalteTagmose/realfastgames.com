@@ -24,13 +24,13 @@ async function parseJSON(data)
 var mousePos = { x: 0, y: 0 };
 var selected = null;
 
-canvas.addEventListener('touchend', (e) => stopDrag());
-canvas.addEventListener('mouseup', (e) => stopDrag());
-canvas.addEventListener('touchmove', (e) => { getTouch(e); drag();});
-canvas.addEventListener('mousemove', (e) => { getMouse(e); drag();});
+canvas.addEventListener('touchend'  , (e) => stopDrag());
+canvas.addEventListener('mouseup'   , (e) => stopDrag());
+canvas.addEventListener('touchmove' , (e) => { getTouch(e); drag();});
+canvas.addEventListener('mousemove' , (e) => { getMouse(e); drag();});
 canvas.addEventListener('touchstart', (e) => { getTouch(e); startDrag();});
-canvas.addEventListener('mousedown',  (e) => { getMouse(e); startDrag();});
-canvas.addEventListener('click',  (e) => { getMouse(e); click(e);});
+canvas.addEventListener('mousedown' , (e) => { getMouse(e); startDrag();});
+canvas.addEventListener('click'     , (e) => { getMouse(e); click(e);});
 
 function startDrag(e)
 {
@@ -66,14 +66,18 @@ function click(e)
 {
     if (e.detail == 1)
     {
-        for (let i = 0; i < boxes.length; i++)
+        if (gameHole.contains(mousePos.x, mousePos.y))
         {
-            var b = boxes[i];
-            if (contains(b, mousePos.x, mousePos.y))
-            {
-                // window.open(b.game.link,'_blank');
-            }
+            gameHole.toggleSpeech();
         }
+        // for (let i = 0; i < boxes.length; i++)
+        // {
+        //     var b = boxes[i];
+        //     if (contains(b, mousePos.x, mousePos.y))
+        //     {
+        //         // window.open(b.game.link,'_blank');
+        //     }
+        // }
     }
 }
 

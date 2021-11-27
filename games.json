@@ -3,6 +3,12 @@
     "boxes": 
     [
         {
+            "name": "Szrot",
+            "imgPath": "thumbnails/szrot.png",
+            "link": "https://www.realfast.dk/2021/08/01/szrot/",
+            "size": 150
+        },
+        {
             "name": "Ballz",
             "imgPath": "thumbnails/ballz.png",
             "link": "https://www.realfast.dk/2021/08/02/ballz/"
@@ -27,7 +33,7 @@
             "name": "Munchy Mammals",
             "imgPath": "thumbnails/munchy-mammals-outlined.png",
             "link": "https://www.realfast.dk/2021/01/05/munchy-mammals/",
-            "size": 135
+            "size": 125
         },
         {
             "name": "Daffodil Village",
