@@ -65,7 +65,9 @@ async function typeText(text) {
         await sleep(speed).then( () => { 
             if (stop) return
             isTyping = true
-            $('#typewriter', $('#speechbubble').contents()).append(text.charAt(i))
+            const ch = text.charAt(i)
+            if (ch === '*') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
+            else            $('#typewriter', $('#speechbubble').contents()).append(ch)
             // $("#p"+l, $('#speechbubble').contents()).append(text.charAt(i)) 
         })
     } 
