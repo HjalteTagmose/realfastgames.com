@@ -40,10 +40,11 @@ async function write(rawText) {
             Link   : match.groups.link,
             Target : match.groups.target } )
     }
-    const texts = rawText.split(textRegex)
+    const texts = rawText.replace(/\n/g, '¤').split(textRegex)
 
     for (let i = 0; i < texts.length-1; i++) {
         if (stop) break
+        if (texts[i].length < 3) continue
         const txt = texts[i].split('\n')
         const lnk = links[i]
         for (let j = 0; j < txt.length; j++) {
@@ -66,7 +67,7 @@ async function typeText(text) {
             if (stop) return
             isTyping = true
             const ch = text.charAt(i)
-            if (ch === '*') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
+            if (ch === '¤') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
             else            $('#typewriter', $('#speechbubble').contents()).append(ch)
             // $("#p"+l, $('#speechbubble').contents()).append(text.charAt(i)) 
         })
