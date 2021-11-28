@@ -22,7 +22,7 @@ var curTime   = startTime
 
 // LOGO
 var logo;
-loadImage("realfast.png").then(img => logo = img);
+loadImage("imgs/realfast.png").then(img => logo = img);
 
 var points = [];
 var sticks = [];

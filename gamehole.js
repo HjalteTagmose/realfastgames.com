@@ -105,8 +105,8 @@ var gameHole =
     }
 }
 
-loadImage("metop.png").then(img => gameHole.top = img);
-loadImage("mebottom.png").then(img => gameHole.bottom = img);
+loadImage("imgs/metop.png").then(img => gameHole.top = img);
+loadImage("imgs/mebottom.png").then(img => gameHole.bottom = img);
 
 function eatGame(game) 
 {  

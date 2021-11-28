@@ -4,7 +4,8 @@ var isTyping = false
 var speed = 30;    
 var pause = 250;    
 var l = 0
-const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
+const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=([\S])(?<link>.*?)\1 ?(target="(?<target>_blank)")?>(?<text>[^<]*)<\/a>/, 'g')
+// new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
 const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');
 
 var writing = false
@@ -35,7 +36,8 @@ async function write(rawText) {
         console.log(match.groups.link + " - " + match.groups.text)
         links.push( { 
             Text :  match.groups.text,
-            Link :  match.groups.link } )
+            Link :  match.groups.link,
+            Target : match.groups.target } )
     }
     const texts = rawText.split(textRegex)
 
@@ -49,7 +51,7 @@ async function write(rawText) {
             if (stop) break
             await sleep(pause)
         }
-        await typeLink(lnk.Text, lnk.Link)
+        await typeLink(lnk.Text, lnk.Link, lnk.Target)
     }
     if (stop) {writing = false;return}
     await typeText(texts[texts.length-1])
@@ -67,8 +69,11 @@ async function typeText(text) {
     isTyping = false
 }
 
-async function typeLink(text, link) {
-    $('#typewriter', $('#speechbubble').contents()).append("<a href='"+link+"' id='c"+l+"'></a>")
+async function typeLink(text, link, target) {
+    var t = target === undefined ? "" : " target='"+target+"' "
+    var a = "<a href='"+link+"' id='c"+l+"'"+t+"></a>";
+    $('#typewriter', $('#speechbubble').contents()).append(a)
+    
     for (let i = 0; i < text.length; i++) {
         await sleep(speed).then( () => { 
             if (stop) return
@@ -76,6 +81,7 @@ async function typeLink(text, link) {
             $("#c"+l, $('#speechbubble').contents()).append(text.charAt(i)) 
         })
     }
+
     isTyping = false
     l++;
 }   
@@ -94,9 +100,12 @@ async function setup() {
         var element = e.target || e.srcElement;
 
         if (element.tagName == 'A') {
+            if (element.target)
+                return true
+
             const link = element.href.replace(/.*\//, "")
             writeLink(link)
-            return false; // prevent default action and stop event propagation
+            return false
         }
     };
     
