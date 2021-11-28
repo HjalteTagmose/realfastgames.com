@@ -3,7 +3,8 @@ var iframe
 var isTyping = false
 var speed = 30;    
 var pause = 250;    
-var l = 0
+var l = 0 
+var p = 0
 const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=([\S])(?<link>.*?)\1 ?(target="(?<target>_blank)")?>(?<text>[^<]*)<\/a>/, 'g')
 // new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
 const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');
@@ -18,14 +19,14 @@ async function clear() {
 }
 
 async function finish() {
-    var s = speed, p = pause
+    const spd = speed, pau = pause
     speed = pause = 0
     isTyping = false
     stop = true
     while(writing) await sleep(10)
     stop = false
-    speed = s
-    pause = p
+    speed = spd
+    pause = pau
 }
 
 async function write(rawText) {
@@ -35,8 +36,8 @@ async function write(rawText) {
     for (const match of matches) {
         console.log(match.groups.link + " - " + match.groups.text)
         links.push( { 
-            Text :  match.groups.text,
-            Link :  match.groups.link,
+            Text   : match.groups.text,
+            Link   : match.groups.link,
             Target : match.groups.target } )
     }
     const texts = rawText.split(textRegex)
@@ -47,7 +48,7 @@ async function write(rawText) {
         const lnk = links[i]
         for (let j = 0; j < txt.length; j++) {
             if (stop) break
-            await typeText(txt[j]+"\n")
+            await typeText(txt[j])
             if (stop) break
             await sleep(pause)
         }
@@ -59,14 +60,18 @@ async function write(rawText) {
 }
 
 async function typeText(text) {
+    // $('#typewriter', $('#speechbubble').contents()).append("<p id='p"+p+"'></p>")
     for (let i = 0; i < text.length; i++) {
         await sleep(speed).then( () => { 
             if (stop) return
             isTyping = true
-            $('#typewriter', $('#speechbubble').contents()).append(text.charAt(i)) 
+            $('#typewriter', $('#speechbubble').contents()).append(text.charAt(i))
+            // $("#p"+l, $('#speechbubble').contents()).append(text.charAt(i)) 
         })
     } 
+
     isTyping = false
+    p++
 }
 
 async function typeLink(text, link, target) {
