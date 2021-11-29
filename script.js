@@ -10,14 +10,18 @@ async function parseJSON(data)
         var rnd = Math.random() * 30 - 15;
         var pos = 
         {
-            x: (size*1.5) * i % window.innerWidth, 
-            y: (size*1.5) * i / Math.floor((window.innerWidth - size) / size)
+            x: (size*150) * i % window.innerWidth - 500, 
+            y: (size*150) * i / Math.floor((window.innerWidth - size) / size)
+            // x: (size*1.5) * i % window.innerWidth, 
+            // y: (size*1.5) * i / Math.floor((window.innerWidth - size) / size)
         }
         var box = createBox(
             pos.x, pos.y, size, rnd
         ); i++;
         await loadImage(game.imgPath).then(img => game.img = img);
         box.game = game;
+        box.hidden = true;
+        pinBox(box, true)
     });
 }
 
@@ -100,6 +104,24 @@ function moveToPos(box, x, y)
     box.path[3].y = y + box.size/2;
 }
 
+function setPos(box, x, y)
+{
+    box.x = x
+    box.y = y
+    box.path.forEach(p => {
+        p.oldx = p.x;
+        p.oldy = p.y;
+    });
+    box.path[0].x = box.path[0].oldx = x - box.size/2;
+    box.path[0].y = box.path[0].oldy = y - box.size/2;
+    box.path[1].x = box.path[1].oldx = x + box.size/2;
+    box.path[1].y = box.path[1].oldy = y - box.size/2;
+    box.path[2].x = box.path[2].oldx = x + box.size/2;
+    box.path[2].y = box.path[2].oldy = y + box.size/2;
+    box.path[3].x = box.path[3].oldx = x - box.size/2;
+    box.path[3].y = box.path[3].oldy = y + box.size/2;
+}
+
 function pinBox(box, pin)
 {
     if (box == null) return;
@@ -133,4 +155,42 @@ function contains(box, x, y)
 {
     return  box.min.x < x && x < box.max.x &&
             box.min.y < y && y < box.max.y;
+}
+
+let pukeDelay = 150
+let pukes = 1
+async function pukeByTag(tag) {
+    playSound('puke');
+    gameHole.puking = true
+    setSpeech(false)
+    for (let i = 0; i < boxes.length; i++)
+    {
+        var b = boxes[i];
+        if (b.game.tags.includes(tag) && b.hidden)
+        {
+            setPos(b, gameHole.x+100, gameHole.y+150)
+            b.hidden = false
+            pinBox(b, false)
+            pukeGame(b.game)
+            console.log("puke: "+b.game.name)
+            await sleep(pukeDelay)
+            if (pukes % 3 === 0) playSound('puke')
+            pukes++
+        }
+    }
+    gameHole.puking = false
+    pukes=1
+}
+
+function countTag(tag) {
+    var total = 0
+    for (let i = 0; i < boxes.length; i++)
+    {
+        var b = boxes[i]
+        if (b.game.tags.includes(tag))
+        {
+            total++
+        }
+    }
+    return total
 }

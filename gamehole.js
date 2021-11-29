@@ -12,10 +12,10 @@ var gameHole =
     talkSpeed: 150,
     mouthPos:0,
     mouthOpen: false,
-    moveSpeed: 2,
+    moveSpeed: .5,
     moveRight: false,
     t: 0,
-    speechOn : true,
+    puking: false,
     render: function(ctx, x, y) {
         mid = this.width/2
         this.x = x-this.offsetX-mid
@@ -24,34 +24,33 @@ var gameHole =
         ctx.drawImage(this.bottom, this.x, this.y+this.mouthPos, this.width, this.height)
     },
     animate: function(dt) {
-        // this.shake(dt)
-        if(isTyping) this.talk(dt)
-        else this.setMouth(false)
-        // this.center(dt);
+        
+        if(this.puking) {
+            this.shake(dt)
+            this.setMouth(true)
+        } else {
+            if(isTyping && speechOn) this.talk(dt)
+            else this.setMouth(false)
+            this.idle(dt) 
+        }
     },
     center: function(dt) {
         this.offsetX = lerp(this.offsetX, -this.offsetX, dt)
     },
     idle: function(dt) {
-        dt = dt * this.moveSpeed
+        if (this.t > 1)
+        {
+            this.moveRight = !this.moveRight
+            this.t = 0
+        }
+
+        this.t += dt * this.moveSpeed
+        const v = smoothstep(0, 1, this.t)
+
         if (!this.moveRight)
-        {
-            this.offsetX = lerp(this.offsetX, -100, dt)
-            if (this.offsetX < -45)
-            {
-                this.moveRight = true;
-                console.log("go right")   
-            }
-        }
+            this.offsetY = (v * -20)+10
         else
-        {
-            this.offsetX = lerp(this.offsetX, 100, dt)
-            if (this.offsetX > 45)
-            {
-                this.moveRight = false;
-                console.log("go left") 
-            }
-        }
+            this.offsetY = (v *  20)-10
     },
     talk: function(dt) {
         dt = dt * this.talkSpeed
@@ -83,25 +82,22 @@ var gameHole =
         this.mouthOpen = open
         this.mouthPos = open ? 20 : 0  
     },
-    toggleSpeech: function() {
-        this.speechOn = !this.speechOn;
-        speechBubble.style = this.speechOn ? "display: block;" : "display: none;";
-    },
-    loadSpeech: function(file){
-
-    },
     contains: function(x, y) {
         return  x < this.width  + this.x && 
                 y < this.height + this.y &&
                 x > this.x && 
                 y > this.y 
     },
+    toggleSpeech: function() {
+        if (!this.puking)
+            setSpeech(!speechOn)
+    },
     eat: function(box) {
         if (box != null)
             eatGame(box.game);
     },
     puke: function() {
-        pukeGame();
+        pukeCurGame();
     }
 }
 
@@ -125,18 +121,25 @@ function eatGame(game)
     // wrapper.append(div);
 }
 
-function pukeGame()
-{
-    if (curGame != null)
+function pukeCurGame() {
+    pukeGame(curGame)
+}
+
+function pukeGame(game) {
+    if (game != null)
     {
-        playSound('puke');
-        curGame.puke = 1;
-        curGame = null;
+        game.puke = 1;
+        game = null;
     }
 }
 
-function playSound(sfx)
-{
+var speechOn=true
+function setSpeech(on) {
+    speechOn = on
+    speechBubble.style = on ? "display: block;" : "display: none;";
+}
+
+function playSound(sfx){
     var audio = new Audio('sfx/'+sfx+'.wav');
     audio.play();
 }
@@ -144,7 +147,7 @@ function playSound(sfx)
 document.addEventListener("visibilitychange", event => {
     if (document.visibilityState == "visible") {
         console.log("tab is active")
-        pukeGame()
+        pukeCurGame()
     } else {
         console.log("tab is inactive")
     }

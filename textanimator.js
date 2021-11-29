@@ -32,7 +32,17 @@ async function finish() {
 async function write(rawText) {
     writing = true
     var links = []
-    const matches = rawText.matchAll(linkRegex)
+
+    // special features
+    matches = rawText.matchAll(/tag#(?<tag>\S*)/g)
+    for (const match of matches) {
+        const tag = match.groups.tag
+        const junk = match[0]
+        rawText = rawText.replace(junk, countTag(tag)+"")
+    }
+
+    // find links
+    var matches = rawText.matchAll(linkRegex)
     for (const match of matches) {
         console.log(match.groups.link + " - " + match.groups.text)
         links.push( { 
@@ -40,8 +50,11 @@ async function write(rawText) {
             Link   : match.groups.link,
             Target : match.groups.target } )
     }
+
+    // find texts
     const texts = rawText.replace(/\n/g, '¤').split(textRegex)
 
+    // write
     for (let i = 0; i < texts.length-1; i++) {
         if (stop) break
         if (texts[i].length < 3) continue
@@ -61,18 +74,16 @@ async function write(rawText) {
 }
 
 async function typeText(text) {
-    // $('#typewriter', $('#speechbubble').contents()).append("<p id='p"+p+"'></p>")
     for (let i = 0; i < text.length; i++) {
         await sleep(speed).then( () => { 
             if (stop) return
             isTyping = true
             const ch = text.charAt(i)
+            if (ch === '¤' || ch === ' ') isTyping = false
             if (ch === '¤') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
             else            $('#typewriter', $('#speechbubble').contents()).append(ch)
-            // $("#p"+l, $('#speechbubble').contents()).append(text.charAt(i)) 
         })
     } 
-
     isTyping = false
     p++
 }
@@ -110,6 +121,11 @@ async function setup() {
         if (element.tagName == 'A') {
             if (element.target)
                 return true
+            if (element.href.includes('puke')) {
+                var tag = element.href.match(/puke-(?<tag>.*)/).groups.tag
+                pukeByTag(tag)
+                return false
+            }
 
             const link = element.href.replace(/.*\//, "")
             writeLink(link)

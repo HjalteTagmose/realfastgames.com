@@ -113,6 +113,7 @@ window.onload = function()
         for (let i = 0; i < boxes.length; i++) 
         {
             var b = boxes[i];
+            if (b.hidden) continue;
             
             b.center.x = (b.path[0].x + b.path[1].x + b.path[2].x + b.path[3].x) / 4;
             b.center.y = (b.path[0].y + b.path[1].y + b.path[2].y + b.path[3].y) / 4;
@@ -179,6 +180,8 @@ window.onload = function()
                 dx = b.path[2].x - b.path[0].x, //old: p1 - p0
                 dy = b.path[2].y - b.path[0].y,
                 angle = Math.atan2(dy, dx) - 0.8; //ugly but works?
+
+            // if (b.hidden) continue
 
             sContext.save();
             sContext.translate(b.path[0].x, b.path[0].y);
