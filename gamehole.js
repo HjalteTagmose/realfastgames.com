@@ -24,7 +24,6 @@ var gameHole =
         ctx.drawImage(this.bottom, this.x, this.y+this.mouthPos, this.width, this.height)
     },
     animate: function(dt) {
-        
         if(this.puking) {
             this.shake(dt)
             this.setMouth(true)

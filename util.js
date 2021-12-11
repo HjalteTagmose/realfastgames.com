@@ -29,3 +29,15 @@ function rndPointInCircle(radius, centerX, centerY) {
     y = centerY + r * Math.sin(theta)
     return { x, y }
 }
+
+// function divContains(div, px, py) {
+//     w = div.offsetWidth
+//     h = div.offsetHeight
+//     x = div.offsetLeft
+//     y = div.offsetTop
+    
+//     return x < px   &&
+//            y < py   &&
+//            x+w > px &&
+//            y+h > py  
+// }

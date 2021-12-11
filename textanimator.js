@@ -102,8 +102,8 @@ async function typeLink(text, link, target) {
     }
 
     isTyping = false
-    l++;
-}   
+    l++
+}
 
 jQuery(document).ready(function() {
     setTimeout(setup, 500);
