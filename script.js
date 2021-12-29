@@ -182,6 +182,23 @@ async function pukeByTag(tag) {
     pukes=1
 }
 
+async function suckByTag(tag) {
+    setSpeech(false)
+    console.log("suck: "+tag)
+    
+    for (let i = 0; i < boxes.length; i++)
+    {
+        var b = boxes[i];
+        if (b.game.tags.includes(tag) && !b.hidden)
+        {
+            let dir = vecdir(b.x,b.y,gameHole.x,gameHole.y)
+            moveToPos(b, b.x+dir.x*.05, b.y+dir.y*.05)
+            pinBox(b, false)
+            await sleep(pukeDelay)
+        }
+    }
+}
+
 function countTag(tag) {
     var total = 0
     for (let i = 0; i < boxes.length; i++)

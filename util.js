@@ -30,6 +30,22 @@ function rndPointInCircle(radius, centerX, centerY) {
     return { x, y }
 }
 
+function veclen(x, y) {
+    return Math.sqrt( x**2 + y**2 );
+}
+
+function vecnorm(x, y) {
+    let len = veclen(x, y);
+    return { x: x/len, y: y/len };
+}
+
+function vecdir(fromX, fromY, toX, toY) {
+    let x = toX-fromX
+    let y = toY-fromY
+    let len = veclen(x, y);
+    return vecnorm(x, y)
+}
+
 // function divContains(div, px, py) {
 //     w = div.offsetWidth
 //     h = div.offsetHeight

@@ -126,6 +126,11 @@ async function setup() {
                 pukeByTag(tag)
                 return false
             }
+            if (element.href.includes('suck')) {
+                var tag = element.href.match(/suck-(?<tag>.*)/).groups.tag
+                suckByTag(tag)
+                return false
+            }
 
             const link = element.href.replace(/.*\//, "")
             writeLink(link)
