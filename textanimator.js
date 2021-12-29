@@ -126,9 +126,8 @@ async function setup() {
                 pukeByTag(tag)
                 return false
             }
-            if (element.href.includes('suck')) {
-                var tag = element.href.match(/suck-(?<tag>.*)/).groups.tag
-                suckByTag(tag)
+            if (element.href.includes('clearBoxes')) {
+                clearBoxes()
                 return false
             }
 

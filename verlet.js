@@ -29,6 +29,7 @@ var sticks = [];
 var boxes  = [];
 
 var colInfo  = { normal: {x:0,y:0} };
+var floorOffset = 0;
 
 var bounce = 0.9;
 var gravity = 0.5;
@@ -242,7 +243,7 @@ window.onload = function()
                 p.oldx = p.x + vx * bounce;
             }
 
-            if (p.y > height) {
+            if (p.y > height+floorOffset) {
                 p.y = height;
                 p.oldy = p.y + vy * bounce;
             } else if (p.y < 0) {

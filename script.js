@@ -182,20 +182,18 @@ async function pukeByTag(tag) {
     pukes=1
 }
 
-async function suckByTag(tag) {
+async function clearBoxes() {
+    console.log('clear')
     setSpeech(false)
-    console.log("suck: "+tag)
-    
+    floorOffset = 100000
+    await sleep(3000)
+    floorOffset = 0 
     for (let i = 0; i < boxes.length; i++)
     {
         var b = boxes[i];
-        if (b.game.tags.includes(tag) && !b.hidden)
-        {
-            let dir = vecdir(b.x,b.y,gameHole.x,gameHole.y)
-            moveToPos(b, b.x+dir.x*.05, b.y+dir.y*.05)
-            pinBox(b, false)
-            await sleep(pukeDelay)
-        }
+        b.hidden = true
+        pinBox(b, true)
+        pukeGame(b.game)
     }
 }
 
