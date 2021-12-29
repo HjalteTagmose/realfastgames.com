@@ -186,14 +186,15 @@ async function clearBoxes() {
     console.log('clear')
     setSpeech(false)
     floorOffset = 100000
-    await sleep(3000)
+    await sleep(1000)
+    while(!speechOn) await sleep(10)
     floorOffset = 0 
+
     for (let i = 0; i < boxes.length; i++)
     {
         var b = boxes[i];
         b.hidden = true
         pinBox(b, true)
-        pukeGame(b.game)
     }
 }
 
