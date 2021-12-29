@@ -159,6 +159,8 @@ function contains(box, x, y)
 
 let pukeDelay = 150
 let pukes = 1
+let cleared = true
+
 async function pukeByTag(tag) {
     playSound('puke');
     gameHole.puking = true
@@ -168,6 +170,7 @@ async function pukeByTag(tag) {
         var b = boxes[i];
         if (b.game.tags.includes(tag) && b.hidden)
         {
+            cleared = false
             setPos(b, gameHole.x+100, gameHole.y+150)
             b.hidden = false
             pinBox(b, false)
@@ -183,19 +186,28 @@ async function pukeByTag(tag) {
 }
 
 async function clearBoxes() {
-    console.log('clear')
-    setSpeech(false)
-    floorOffset = 100000
-    await sleep(1000)
-    while(!speechOn) await sleep(10)
-    floorOffset = 0 
+    if (cleared) return
 
+    setSpeech(false)
+    floorOffset = 50000
+    
+    await sleep(1000)
+    let waited = 1000
+    while(!speechOn && waited < 1500) 
+    {
+        await sleep(10)
+        waited += 10
+    }
+    
+    floorOffset = 0 
     for (let i = 0; i < boxes.length; i++)
     {
         var b = boxes[i];
         b.hidden = true
         pinBox(b, true)
     }
+    cleared = true
+    if (!speechOn) setSpeech(true)
 }
 
 function countTag(tag) {

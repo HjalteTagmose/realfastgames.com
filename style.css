@@ -33,9 +33,15 @@
     box-shadow: 20px 20px 20px #889299;
 }
 
+@font-face {
+    font-family: talkFont;
+    src:url("/SLEEP.ttf");
+}
+
 #typewriter
 {
     font-size: 3em;
+    font-family: talkFont;
 }
 
 @media (orientation: portrait) 
