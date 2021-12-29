@@ -16,6 +16,12 @@
             "tags": [ "All", "Gamejam", "2D", "Otherjam", "2021" ]
         },
         {
+            "name": "Rival Sniper",
+            "imgPath": "thumbnails/rivalsniper.png",
+            "link": "https://www.realfast.dk/2021/10/04/rival-sniper/",
+            "tags": [ "All", "Gamejam", "2D", "LudumDare", "2021" ]
+        },
+        {
             "name": "Hitch Bird",
             "imgPath": "thumbnails/hitch.png",
             "link": "https://www.realfast.dk/2018/08/13/hitch-bird/",

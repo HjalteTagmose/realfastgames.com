@@ -22,13 +22,31 @@
 
 #speechdiv
 {
-    display: block;
     z-index: 1;
+    display: block;
     position:absolute; 
+    background: white;
     top: 20%; bottom: 20%;
     left: 25%; right: 25%;
     border-radius: 25px;
-    background: white;
     padding: 20px;
     box-shadow: 20px 20px 20px #889299;
+}
+
+#typewriter
+{
+    font-size: 3em;
+}
+
+@media (orientation: portrait) 
+{ 
+    #speechdiv
+    {
+        top: 20%; bottom: 5%;
+        left: 5%; right: 5%;
+    }
+    #typewriter
+    {
+        font-size: 4em;
+    }
 }

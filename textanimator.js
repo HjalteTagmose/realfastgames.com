@@ -1,7 +1,7 @@
 var typewriter
 var iframe
 var isTyping = false
-var speed = 30;    
+var speed = 10;    
 var pause = 250;    
 var l = 0 
 var p = 0
@@ -33,7 +33,7 @@ async function write(rawText) {
     writing = true
     var links = []
 
-    // special features
+    // count tags: tag#
     matches = rawText.matchAll(/tag#(?<tag>\S*)/g)
     for (const match of matches) {
         const tag = match.groups.tag
