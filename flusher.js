@@ -5,14 +5,24 @@ var links = []
 var handle;
 var handleStart = 0;
 
+var flushing = false
+
 async function updateFlusher() {
-    renderFlusher();
-    if (handle.path[0].y > handleStart+incr*5)
-    {
-        await clearBoxes()
-        pinBox(handle, false)
-        handle.hidden = false
-    }
+    renderFlusher()
+    if (handle.path[0].y > handleStart+incr*5 && !flushing)
+        await flush()
+}
+
+async function flush()
+{
+    if (flushing) return
+    flushing = true
+    playSound('flush')
+    await clearBoxes()
+    pinBox(handle, false)
+    handle.hidden = false
+    await sleep(4000)
+    flushing = false
 }
 
 async function createFlusher() {

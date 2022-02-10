@@ -7,7 +7,13 @@
             "imgPath": "thumbnails/szrot.png",
             "link": "https://www.realfast.dk/2021/08/01/szrot/",
             "size": 150,
-            "tags": [ "All", "Current", "3D", "2021", "Szrot" ]
+            "tags": [ "All", "Current", "3D", "2021", "2022", "Szrot" ]
+        },
+        {
+            "name": "Hotseat Hoarders",
+            "imgPath": "thumbnails/hotseathoarders.png",
+            "link": "https://www.realfast.dk/2021/08/02/ballz/",
+            "tags": [ "All", "Gamejam", "3D", "GGJ", "2022" ]
         },
         {
             "name": "Ballz",
