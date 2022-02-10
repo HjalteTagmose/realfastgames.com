@@ -52,7 +52,7 @@ async function write(rawText) {
     }
 
     // find texts
-    const texts = rawText.replace(/\n/g, '¤').split(textRegex)
+    const texts = rawText.replace(/\n/g, '~').split(textRegex)
 
     // write
     for (let i = 0; i < texts.length-1; i++) {
@@ -79,8 +79,8 @@ async function typeText(text) {
             if (stop) return
             isTyping = true
             const ch = text.charAt(i)
-            if (ch === '¤' || ch === ' ') isTyping = false
-            if (ch === '¤') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
+            if (ch === '~' || ch === ' ') isTyping = false
+            if (ch === '~') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
             else            $('#typewriter', $('#speechbubble').contents()).append(ch)
         })
     } 

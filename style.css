@@ -20,6 +20,17 @@
     z-index:0;
 }
 
+@font-face {
+    font-family: talkFont;
+    src:url("/fonts/SLEEP.ttf");
+}
+
+#typewriter
+{
+    font-size: 3em;
+    font-family: talkFont;
+}
+
 #speechdiv
 {
     z-index: 1;
@@ -33,26 +44,11 @@
     box-shadow: 20px 20px 20px #889299;
 }
 
-@font-face {
-    font-family: talkFont;
-    src:url("/fonts/SLEEP.ttf");
-}
-
-#typewriter
-{
-    font-size: 3em;
-    font-family: talkFont;
-}
-
-@media (orientation: portrait) 
+@media (max-width: 970px) and (max-aspect-ratio: 10/9), (orientation: portrait)
 { 
     #speechdiv
     {
         top: 20%; bottom: 5%;
         left: 5%; right: 5%;
-    }
-    #typewriter
-    {
-        font-size: 4em;
     }
 }

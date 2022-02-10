@@ -59,7 +59,7 @@ async function createFlusher() {
     var by = incr*linkCount+incr
     var box = createBox(x,by,100,0)
     box.game = { name: "flusher", link: "flusher", img:null, tags: ["flusher"] }
-    await loadImage("/handle-temp.png").then(img => box.game.img = img);
+    await loadImage("/imgs/handle-temp.png").then(img => box.game.img = img);
     box.pinned = false
 
     handle = box
