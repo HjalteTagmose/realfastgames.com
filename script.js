@@ -2,8 +2,7 @@ $.getJSON("games.json", function(data) {
     parseJSON(data);
 });
 
-async function parseJSON(data)
-{
+async function parseJSON(data) {
     var i = 0;
     data.boxes.forEach(async game => {
         var size = (game.size ?? 100) * data.sizeMultiplier;
@@ -23,6 +22,30 @@ async function parseJSON(data)
         box.hidden = true;
         pinBox(box, true)
     });
+
+//     createHandle()
+// }
+
+// function createHandle() {
+//     var p0 = {
+//         x: innerWidth/2, 
+//         y: 30,
+//         oldx: innerWidth/2, 
+//         oldy: 30,
+//     },
+//     p1 = {
+//         x: innerWidth/2, 
+//         y: 100,
+//         oldx: innerWidth/2, 
+//         oldy: 100,
+//     },
+//     s0 = {
+//         p0: p0,
+//         p1: p1,
+//         length: distance(p0, p1)
+//     }
+
+//     sticks.push(s0);
 }
 
 var mousePos = { x: 0, y: 0 };

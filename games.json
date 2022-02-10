@@ -41,11 +41,11 @@
             "tags": [ "All", "3D", "2016" ]
         },
         {
-            "name": "Munchy Mammals",
-            "imgPath": "thumbnails/munchy-mammals-outlined.png",
-            "link": "https://www.realfast.dk/2021/01/05/munchy-mammals/",
-            "size": 125,
-            "tags": [ "All", "2D", "2020" ]
+          "name": "Munchy Mammals",
+          "imgPath": "thumbnails/munchy-mammals-outlined.png",
+          "link": "https://www.realfast.dk/2020/06/15/munchy-mammals/",
+          "size": 125,
+          "tags": [ "All", "2D", "2020" ]
         },
         {
             "name": "Daffodil Village",
