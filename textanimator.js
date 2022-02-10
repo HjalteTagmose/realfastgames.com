@@ -126,6 +126,10 @@ async function setup() {
                 pukeByTag(tag)
                 return false
             }
+            if (element.href.includes('flusher')) {
+                writeLink("eatflusher")
+                return false
+            }
             if (element.href.includes('clearBoxes')) {
                 clearBoxes()
                 return false

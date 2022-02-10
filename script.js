@@ -23,33 +23,12 @@ async function parseJSON(data) {
         pinBox(box, true)
     });
 
-//     createHandle()
-// }
-
-// function createHandle() {
-//     var p0 = {
-//         x: innerWidth/2, 
-//         y: 30,
-//         oldx: innerWidth/2, 
-//         oldy: 30,
-//     },
-//     p1 = {
-//         x: innerWidth/2, 
-//         y: 100,
-//         oldx: innerWidth/2, 
-//         oldy: 100,
-//     },
-//     s0 = {
-//         p0: p0,
-//         p1: p1,
-//         length: distance(p0, p1)
-//     }
-
-//     sticks.push(s0);
+    await createFlusher()
 }
 
 var mousePos = { x: 0, y: 0 };
 var selected = null;
+var clickGame= null;
 
 canvas.addEventListener('touchend'  , (e) => stopDrag());
 canvas.addEventListener('mouseup'   , (e) => stopDrag());
@@ -68,6 +47,7 @@ function startDrag(e)
         {
             console.log(b.game.name);
             selected = b;
+            clickGame= b;
         }
     }
 }
@@ -91,7 +71,7 @@ function stopDrag(e)
 
 function click(e)
 {
-    if (e.detail == 1)
+    if (e.detail == 1 && clickGame == null)
     {
         if (gameHole.contains(mousePos.x, mousePos.y))
         {
@@ -106,6 +86,7 @@ function click(e)
         //     }
         // }
     }
+    clickGame = null;
 }
 
 function moveToPos(box, x, y)

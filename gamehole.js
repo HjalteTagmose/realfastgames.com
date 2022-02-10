@@ -105,6 +105,13 @@ loadImage("imgs/mebottom.png").then(img => gameHole.bottom = img);
 
 function eatGame(game) 
 {  
+    if (game.tags.includes("flusher")) 
+    {
+        writeLink("flusher")
+        setSpeech(true)
+        return;
+    }
+
     playSound('eat');
     curGame = game;
     window.open(game.link, '_blank').focus();
