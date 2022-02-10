@@ -1,6 +1,7 @@
 thumbnails/
 sfx/
 imgs/
+misc/
 *.png
 *.psd
 *.ttf
