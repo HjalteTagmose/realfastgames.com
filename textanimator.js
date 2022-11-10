@@ -52,7 +52,7 @@ async function write(rawText) {
     }
 
     // find pukes
-    var matches = rawText.matchAll(/puke_(?<puke>\S*)/g)
+    var matches = rawText.matchAll(/[^href="]puke_(?<puke>\S*)/g)
     for (const match of matches) {
         const puke = match.groups.puke
         const junk = match[0]

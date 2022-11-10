@@ -20,8 +20,8 @@ public class YarnToHtmlConverter {
             "</html>\n";
 
         // Get yarn file
-        String yarnPath = "C:\\dev\\web\\spelkolletivet-intro\\dialogue.yarn";
-        String htmlPath = "C:\\dev\\web\\spelkolletivet-intro\\speechbubble.html";
+        String yarnPath = "C:\\dev\\web\\realfastgames.com\\dialogue.yarn";
+        String htmlPath = "C:\\dev\\web\\realfastgames.com\\speechbubble.html";
         // String path = new String(System.in.readAllBytes()).trim(); 
         // System.out.println(path);
         StringBuilder yarn = new StringBuilder();
