@@ -34,7 +34,7 @@ async function write(rawText) {
     var links = []
 
     // count tags: tag#
-    matches = rawText.matchAll(/tag#(?<tag>\S*)/g)
+    matches = rawText.matchAll(/tag_(?<tag>\S*)/g)
     for (const match of matches) {
         const tag = match.groups.tag
         const junk = match[0]
@@ -51,6 +51,15 @@ async function write(rawText) {
             Target : match.groups.target } )
     }
 
+    // find pukes
+    var matches = rawText.matchAll(/puke_(?<puke>\S*)/g)
+    for (const match of matches) {
+        const puke = match.groups.puke
+        const junk = match[0]
+        rawText = rawText.replace(junk, "")
+        pukeByTag(puke, true)
+    }
+
     // find texts
     const texts = rawText.replace(/\n/g, '~').split(textRegex)
 
@@ -60,6 +69,7 @@ async function write(rawText) {
         if (texts[i].length < 3) continue
         const txt = texts[i].split('\n')
         const lnk = links[i]
+
         for (let j = 0; j < txt.length; j++) {
             if (stop) break
             await typeText(txt[j])
@@ -122,7 +132,7 @@ async function setup() {
             if (element.target)
                 return true
             if (element.href.includes('puke')) {
-                var tag = element.href.match(/puke-(?<tag>.*)/).groups.tag
+                var tag = element.href.match(/puke_(?<tag>.*)/).groups.tag
                 pukeByTag(tag)
                 return false
             }
@@ -141,7 +151,7 @@ async function setup() {
         }
     };
     
-    curWrite = writeLink("intro")
+    curWrite = writeLink("Start")
 }
 
 async function writeLink(link) {

@@ -1,0 +1,181 @@
+title: Start
+position: -82,-519
+---
+Hello there!
+
+--> Hello
+    <<jump Hello2>>
+--> Who are you?
+    <<jump Introduction>>
+===
+
+title: Introduction
+position: 93,-335
+---
+My name is Hjalte and I make video games!
+Do you wanna see?
+
+--> Yes
+    <<jump ShowGames>>
+--> Nah
+    <<jump NoGames>>
+--> Tell me more!
+    <<jump Introduction2>>
+===
+
+title: Hello2
+position: -272,-339
+---
+You wanna see some games?
+
+--> Who are you?
+    <<jump Introduction>>
+--> Yes
+    <<jump ShowGames>>
+--> Nah
+    <<jump NoGames>>
+===
+
+title: Introduction2
+position: 368,-242
+---
+I've been making games for about 9 years, mostly in the form of gamejams. 
+I love all aspects of gamedev, but I mostly do coding and game design.
+
+About a year ago, I started working on a game with my friend, which got A LOT more attention than I'm used to.
+This is my current project Szrot. Back in June, we got a small grant, so I left my university and job to pursue it full time!
+
+Now we've run out of money, but hopefully it's fine haha fuck oh god shit aaaaaaaah
+
+I also have a bunch of education and experience, I can tell you about, but I'd really rather just show you my games!
+puke_About puke_Szrot
+--> Show me games!
+    <<jump ShowGames>>
+--> Education
+    <<jump Education>>
+--> Experience
+    <<jump Experience>>
+===
+
+title: Education
+position: 305,81
+---
+Ugh... so boring, but okay, here you go.
+
+2013-2014: Hoejer Design Efterskole
+2014-2017: GameIT College
+2017-2017: Mathematics A
+2021-2021: Hanyang University
+2019-2022: IT University of Copenhagen
+
+Now how about those games?
+--> Games!
+    <<jump ShowGames>>
+--> Experience
+    <<jump Experience>>
+===
+
+title: Experience
+position: 469,-25
+---
+Really? Fine.
+
+2015: Internship at Zaxis
+2017-18: Frontend Developer at Invisio
+2018: Teaching Assistant at NNY
+2021: Teaching Assistant at ITU
+2021-22: C\# Developer at Biometric Solutions
+
+Now how about those games?
+--> Games!
+    <<jump ShowGames>>
+--> Education
+    <<jump Education>>
+===
+
+title: ShowGames
+position: -321,122
+---
+Okay! My current project is Szrot, but I also do A LOT of gamejams. 
+What do you wanna see?
+
+--> Szrot
+    <<jump puke_Szrot>>
+--> Gamejams
+    <<jump ShowGamejams>>
+--> By year
+    <<jump ShowGamesByYear>>
+--> Everything!
+    <<jump puke_All>>
+--> Who are you again?
+    <<jump Introduction>>
+===
+
+title: ShowMoreGames
+position: -592,127
+---
+*burp*.. 
+Tasty! Feed me a game and I'll tell you more about it!
+Or if you're feeling overwhelmed you can always just flush them by pulling the handle.
+
+--> I want more games!
+    <<jump ShowGames>>
+===
+
+title: ShowGamesByYear
+position: -413,424
+---
+Mmmm, thats a good year! 
+
+--> 2022 ( tag_2022 ) 
+    <<jump puke_2022>> 
+--> 2021 ( tag_2021 ) 
+    <<jump puke_2021>> 
+--> 2020 ( tag_2020 ) 
+    <<jump puke_2020>> 
+--> 2019 ( tag_2019 ) 
+    <<jump puke_2019>> 
+--> 2018 ( tag_2018 ) 
+    <<jump puke_2018>> 
+--> 2017 ( tag_2017 ) 
+    <<jump puke_2017>> 
+--> 2016 ( tag_2016 ) 
+    <<jump puke_2016>> 
+--> 2015 ( tag_2015 ) 
+    <<jump puke_2015>> 
+--> 2014 ( tag_2014 ) 
+    <<jump puke_2014>> 
+--> Show me something else
+    <<jump ShowGames>>
+===
+
+title: ShowGamejams
+position: -194,421
+---
+I've done tag_Gamejam jams!
+--> Ludum Dare       ( tag_LudumDare )     
+    <<jump puke_LudumDare>>
+--> Nordic GameJam   ( tag_NGJ )          
+    <<jump puke_NGJ>>
+--> Global GameJam   ( tag_GGJ )                
+    <<jump puke_GGJ>>
+--> Trainjam         ( tag_Trainjam )           
+    <<jump puke_Trainjam>>
+--> Others           ( tag_Otherjam )           
+    <<jump puke_Otherjam>>
+--> All              ( tag_Gamejam )            
+    <<jump puke_Gamejam>>
+--> Show me something else
+    <<jump ShowGames>>
+===
+
+title: NoGames
+position: -390,-111
+---
+Ok... that's kinda all I do here...
+
+--> Who are you again?
+    <<jump Introduction>>
+--> Ok, I changed my mind
+    <<jump ShowGames>>
+===

@@ -5,7 +5,7 @@
         {
             "name": "Szrot",
             "imgPath": "thumbnails/szrot.png",
-            "link": "https://www.realfast.dk/2021/08/01/szrot/",
+            "link": "https://szrotgame.com/",
             "size": 150,
             "tags": [ "All", "Current", "3D", "2021", "2022", "Szrot" ]
         },
@@ -141,7 +141,7 @@
             "name": "Hjalte Tagmose",
             "imgPath": "thumbnails/me.png",
             "link": "https://www.realfast.dk/about/",
-            "size": 80,
+            "size": 380,
             "tags": [ "About" ]
         },
         {

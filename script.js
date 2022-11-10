@@ -165,10 +165,10 @@ let pukeDelay = 150
 let pukes = 1
 let cleared = true
 
-async function pukeByTag(tag) {
+async function pukeByTag(tag, showSpeech = false) {
     playSound('puke');
     gameHole.puking = true
-    setSpeech(false)
+    setSpeech(showSpeech)
     for (let i = 0; i < boxes.length; i++)
     {
         var b = boxes[i];
