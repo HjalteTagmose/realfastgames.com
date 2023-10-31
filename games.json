@@ -11,8 +11,26 @@
     {
       "name": "Hotseat Hoarders",
       "imgPath": "thumbnails/hotseathoarders.png",
-      "link": "https://www.realfast.dk/2021/08/02/ballz/",
+      "link": "https://www.realfast.dk/2022/01/30/hotseat-hoarders/",
       "tags": [ "All", "Gamejam", "3D", "GGJ", "2022" ]
+    },
+    {
+      "name": "Push My Buttons",
+      "imgPath": "thumbnails/pushmybuttons.PNG",
+      "link": "https://www.realfast.dk/2023/10/31/push-my-buttons/",
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
+    },
+    {
+      "name": "Par None",
+      "imgPath": "thumbnails/par-none.png",
+      "link": "https://www.realfast.dk/2021/08/02/ballz/",
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
+    },
+    {
+      "name": "Roundabout Rally",
+      "imgPath": "thumbnails/roundabout-rally.png",
+      "link": "https://www.realfast.dk/2023/10/31/roundabout-rally/",
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
     },
     {
       "name": "Ballz",
@@ -47,10 +65,10 @@
     },
     {
       "name": "Munchy Mammals",
-      "imgPath": "thumbnails/munchy-mammals-outlined.png",
+      "imgPath": "thumbnails/munchy-mammals.png",
       "link": "https://www.realfast.dk/2020/06/15/munchy-mammals/",
-      "size": 125,
-      "tags": [ "All", "2D", "2020" ]
+      "size": 200,
+      "tags": [ "All", "2D", "2020", "2023" ]
     },
     {
       "name": "Daffodil Village",
