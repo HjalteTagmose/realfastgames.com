@@ -34,11 +34,12 @@ async function write(rawText) {
     var links = []
 
     // count tags: tag#
-    matches = rawText.matchAll(/tag_(?<tag>\S*)/g)
+    matches = rawText.matchAll(/tag#(?<tag>\S*)/g)
     for (const match of matches) {
         const tag = match.groups.tag
         const junk = match[0]
         rawText = rawText.replace(junk, countTag(tag)+"")
+        console.log("Tag: " + tag)
     }
 
     // find links
@@ -52,7 +53,7 @@ async function write(rawText) {
     }
 
     // find pukes
-    var matches = rawText.matchAll(/[^href="]puke_(?<puke>\S*)/g)
+    var matches = rawText.matchAll(/[^href="]puke-(?<puke>\S*)/g)
     for (const match of matches) {
         const puke = match.groups.puke
         const junk = match[0]
@@ -132,7 +133,7 @@ async function setup() {
             if (element.target)
                 return true
             if (element.href.includes('puke')) {
-                var tag = element.href.match(/puke_(?<tag>.*)/).groups.tag
+                var tag = element.href.match(/puke-(?<tag>.*)/).groups.tag
                 pukeByTag(tag)
                 return false
             }
@@ -151,7 +152,7 @@ async function setup() {
         }
     };
     
-    curWrite = writeLink("Start")
+    curWrite = writeLink("intro")
 }
 
 async function writeLink(link) {
