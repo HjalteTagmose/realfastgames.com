@@ -58,6 +58,13 @@
       "tags": [ "All", "3D", "Gamejam", "Trainjam", "2019" ]
     },
     {
+      "name": "Party Crasher Buffet",
+      "imgPath": "thumbnails/partycrasherbuffet.png",
+      "link": "https://www.realfast.dk/2024/01/29/party-crasher-buffet/",
+      "size": 110,
+      "tags": [ "All", "3D", "Gamejam", "GGJ", "2024" ]
+    },
+    {
       "name": "Astro Tube",
       "imgPath": "thumbnails/astrotube.png",
       "link": "https://www.realfast.dk/2016/05/05/astro-tube/",
@@ -127,6 +134,13 @@
       "link": "https://www.realfast.dk/2017/01/22/the-blind-burglar/",
       "size": 75,
       "tags": [ "All", "2D", "Gamejam", "GGJ", "2017" ]
+    },
+    {
+      "name": "Should've Listened",
+      "imgPath": "thumbnails/shouldvelistened.png",
+      "link": "https://www.realfast.dk/2022/04/29/shouldve-listened/",
+      "size": 75,
+      "tags": [ "All", "3D", "Gamejam", "NGJ", "2022" ]
     },
     {
       "name": "Cat Tales",
