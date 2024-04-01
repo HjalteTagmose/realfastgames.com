@@ -10,6 +10,14 @@
       "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "Szrot" ]
     },
     {
+      "name": "Munchy Mammals",
+      "imgPath": "thumbnails/munchy-mammals.png",
+      "link": "https://munchymammals.com/",
+      "date": "2023-10-19",
+      "size": 200,
+      "tags": [ "All", "2D", "2020", "2023", "2024", "Munchy" ]
+    },
+    {
       "name": "Hotseat Hoarders",
       "imgPath": "thumbnails/hotseathoarders.png",
       "link": "https://www.realfast.dk/2022/01/30/hotseat-hoarders/",
@@ -88,14 +96,6 @@
       "link": "https://www.realfast.dk/2016/05/05/astro-tube/",
       "date": "2016-05-05",
       "tags": [ "All", "3D", "2016" ]
-    },
-    {
-      "name": "Munchy Mammals",
-      "imgPath": "thumbnails/munchy-mammals.png",
-      "link": "https://www.realfast.dk/2020/06/15/munchy-mammals/",
-      "date": "2020-06-15",
-      "size": 200,
-      "tags": [ "All", "2D", "2020", "2023" ]
     },
     {
       "name": "Daffodil Village",
