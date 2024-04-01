@@ -75,6 +75,14 @@
       "tags": [ "All", "3D", "Gamejam", "GGJ", "2024" ]
     },
     {
+      "name": "My Friend in the Lake",
+      "imgPath": "thumbnails/myfriendinthelake.png",
+      "link": "https://www.realfast.dk/2024/01/29/party-crasher-buffet/",
+      "date": "2024-03-14",
+      "size": 110,
+      "tags": [ "All", "2D", "Gamejam", "Otherjam", "2024" ]
+    },
+    {
       "name": "Astro Tube",
       "imgPath": "thumbnails/astrotube.png",
       "link": "https://www.realfast.dk/2016/05/05/astro-tube/",
