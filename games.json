@@ -5,23 +5,26 @@
       "name": "Szrot",
       "imgPath": "thumbnails/szrot.png",
       "link": "https://szrotgame.com/",
-      "size": 200,
       "date": "N/A",
-      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "Szrot" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "Szrot" ],
+      "size": 200
     },
     {
       "name": "Munchy Mammals",
       "imgPath": "thumbnails/munchy-mammals.png",
       "link": "https://munchymammals.com/",
       "date": "2023-10-19",
-      "size": 200,
-      "tags": [ "All", "2D", "2020", "2023", "2024", "Munchy" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "2020", "2023", "2024", "Munchy" ],
+      "size": 200
     },
     {
       "name": "Hotseat Hoarders",
       "imgPath": "thumbnails/hotseathoarders.png",
       "link": "https://www.realfast.dk/2022/01/30/hotseat-hoarders/",
       "date": "2022-01-30",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "3D", "GGJ", "2022" ]
     },
     {
@@ -29,6 +32,7 @@
       "imgPath": "thumbnails/pushmybuttons.PNG",
       "link": "https://www.realfast.dk/2023/10/31/push-my-buttons/",
       "date": "2023-10-31",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
     },
     {
@@ -36,6 +40,7 @@
       "imgPath": "thumbnails/par-none.png",
       "link": "https://www.realfast.dk/2023/10/02/par-none/",
       "date": "2023-10-02",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
     },
     {
@@ -43,6 +48,7 @@
       "imgPath": "thumbnails/roundabout-rally.png",
       "link": "https://www.realfast.dk/2023/10/31/roundabout-rally/",
       "date": "2023-10-31",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
     },
     {
@@ -50,6 +56,7 @@
       "imgPath": "thumbnails/ballz.png",
       "link": "https://www.realfast.dk/2021/08/02/ballz/",
       "date": "2021-08-02",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2021" ]
     },
     {
@@ -57,6 +64,7 @@
       "imgPath": "thumbnails/rivalsniper.png",
       "link": "https://www.realfast.dk/2021/10/04/rival-sniper/",
       "date": "2021-10-04",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "LudumDare", "2021" ]
     },
     {
@@ -64,6 +72,7 @@
       "imgPath": "thumbnails/hitch.png",
       "link": "https://www.realfast.dk/2018/08/13/hitch-bird/",
       "date": "2018-08-13",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "3D", "LudumDare", "2018" ]
     },
     {
@@ -71,30 +80,34 @@
       "imgPath": "thumbnails/skiracer.png",
       "link": "https://www.realfast.dk/2019/03/27/ski-racer/",
       "date": "2019-03-27",
-      "size": 110,
-      "tags": [ "All", "3D", "Gamejam", "Trainjam", "2019" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "3D", "Gamejam", "Trainjam", "2019" ],
+      "size": 110
     },
     {
       "name": "Party Crasher Buffet",
       "imgPath": "thumbnails/partycrasherbuffet.png",
       "link": "https://www.realfast.dk/2024/01/29/party-crasher-buffet/",
       "date": "2024-01-29",
-      "size": 110,
-      "tags": [ "All", "3D", "Gamejam", "GGJ", "2024" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "3D", "Gamejam", "GGJ", "2024" ],
+      "size": 110
     },
     {
       "name": "My Friend in the Lake",
       "imgPath": "thumbnails/myfriendinthelake.png",
       "link": "https://www.realfast.dk/2024/01/29/party-crasher-buffet/",
       "date": "2024-03-14",
-      "size": 110,
-      "tags": [ "All", "2D", "Gamejam", "Otherjam", "2024" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "Otherjam", "2024" ],
+      "size": 110
     },
     {
       "name": "Astro Tube",
       "imgPath": "thumbnails/astrotube.png",
       "link": "https://www.realfast.dk/2016/05/05/astro-tube/",
       "date": "2016-05-05",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2016" ]
     },
     {
@@ -102,14 +115,16 @@
       "imgPath": "thumbnails/daffodil.png",
       "link": "https://www.realfast.dk/2017/04/24/daffodil-village/",
       "date": "2017-04-24",
-      "size": 75,
-      "tags": [ "All", "2D", "Gamejam", "LudumDare", "2017" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "LudumDare", "2017" ],
+      "size": 75
     },
     {
       "name": "Hack & Drive",
       "imgPath": "thumbnails/hack-drive.png",
       "link": "https://www.realfast.dk/2017/11/20/hack-and-drive/",
       "date": "2017-11-20",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "Otherjam", "2017" ]
     },
     {
@@ -117,6 +132,7 @@
       "imgPath": "thumbnails/thereplacement.png",
       "link": "https://www.realfast.dk/2017/02/25/the-replacement/",
       "date": "2017-02-25",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2017" ]
     },
     {
@@ -124,22 +140,25 @@
       "imgPath": "thumbnails/ship-cat.png",
       "link": "https://www.realfast.dk/2020/04/20/ship-cat/",
       "date": "2020-04-20",
-      "size": 110,
-      "tags": [ "All", "3D", "Gamejam", "LudumDare", "2020" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "3D", "Gamejam", "LudumDare", "2020" ],
+      "size": 110
     },
     {
       "name": "Robo Drainer",
       "imgPath": "thumbnails/robo-drainer.png",
       "link": "https://www.realfast.dk/2017/08/01/510/",
       "date": "2017-08-01",
-      "size": 75,
-      "tags": [ "All", "2D", "Gamejam", "LudumDare", "2017" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "LudumDare", "2017" ],
+      "size": 75
     },
     {
       "name": "Defuser 4000",
       "imgPath": "thumbnails/defuser4000.png",
       "link": "https://www.realfast.dk/2015/12/15/defuser-4000/",
       "date": "2015-12-15",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2015" ]
     },
     {
@@ -147,6 +166,7 @@
       "imgPath": "thumbnails/aquanaut.png",
       "link": "https://www.realfast.dk/2020/02/02/aquanaut/",
       "date": "2020-02-02",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "GGJ", "2020" ]
     },
     {
@@ -154,6 +174,7 @@
       "imgPath": "thumbnails/asciispacecmd.png",
       "link": "https://www.realfast.dk/2018/04/24/695/",
       "date": "2018-04-24",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2018" ]
     },
     {
@@ -161,38 +182,43 @@
       "imgPath": "thumbnails/blindburglar-thumb.png",
       "link": "https://www.realfast.dk/2017/01/22/the-blind-burglar/",
       "date": "2017-01-22",
-      "size": 75,
-      "tags": [ "All", "2D", "Gamejam", "GGJ", "2017" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "GGJ", "2017" ],
+      "size": 75
     },
     {
       "name": "Should've Listened",
       "imgPath": "thumbnails/shouldvelistened.png",
       "link": "https://www.realfast.dk/2022/04/29/shouldve-listened/",
       "date": "2022-04-29",
-      "size": 75,
-      "tags": [ "All", "3D", "Gamejam", "NGJ", "2022" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "3D", "Gamejam", "NGJ", "2022" ],
+      "size": 75
     },
     {
       "name": "Cat Tales",
       "imgPath": "thumbnails/cat-tale.png",
       "link": "https://www.realfast.dk/2018/03/23/cat-tales/",
       "date": "2018-03-23",
-      "size": 75,
-      "tags": [ "All", "2D", "Gamejam", "Trainjam", "2018" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "Trainjam", "2018" ],
+      "size": 75
     },
     {
       "name": "Despot Dungeons",
       "imgPath": "thumbnails/despot-dungeons.png",
       "link": "https://www.realfast.dk/2017/10/02/despot-dungeons/",
       "date": "2017-10-02",
-      "size": 135,
-      "tags": [ "All", "2D", "Pixelart", "2017" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Pixelart", "2017" ],
+      "size": 135
     },
     {
       "name": "Escape from Finger Castle.png",
       "imgPath": "thumbnails/finger-castle.png",
       "link": "https://www.realfast.dk/2016/10/10/escape-from-finger-castle/",
       "date": "2016-10-10",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2016" ]
     },
     {
@@ -200,6 +226,7 @@
       "imgPath": "thumbnails/fractal.png",
       "link": "https://www.realfast.dk/2019/04/11/fractal-city/",
       "date": "2019-04-11",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2019" ]
     },
     {
@@ -207,6 +234,7 @@
       "imgPath": "thumbnails/golden-sword.png",
       "link": "https://www.realfast.dk/2014/12/16/the-quest-for-the-golden-sword/",
       "date": "2014-12-16",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "2014" ]
     },
     {
@@ -214,6 +242,7 @@
       "imgPath": "thumbnails/houdini-plumb.png",
       "link": "https://www.realfast.dk/2016/04/11/123/",
       "date": "2016-04-11",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "NGJ", "2016" ]
     },
     {
@@ -221,6 +250,7 @@
       "imgPath": "thumbnails/latefee.png",
       "link": "https://www.realfast.dk/2016/08/30/the-late-fee/",
       "date": "2016-08-30",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2016" ]
     },
     {
@@ -228,6 +258,7 @@
       "imgPath": "thumbnails/lma.png",
       "link": "https://www.realfast.dk/2017/06/21/last-minute-assignment/",
       "date": "2017-06-21",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2017" ]
     },
     {
@@ -235,6 +266,7 @@
       "imgPath": "thumbnails/mirror.png",
       "link": "https://www.realfast.dk/2013/06/20/mirror/",
       "date": "2013-06-20",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2014" ]
     },
     {
@@ -242,6 +274,7 @@
       "imgPath": "thumbnails/necro-chasm.png",
       "link": "https://www.realfast.dk/2014/12/09/necro-chasm/",
       "date": "2014-12-09",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2014" ]
     },
     {
@@ -249,6 +282,7 @@
       "imgPath": "thumbnails/neverending-puke.png",
       "link": "https://www.realfast.dk/2015/04/21/the-neverending-fountain-of-puke/",
       "date": "2015-04-21",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2015" ]
     },
     {
@@ -256,6 +290,7 @@
       "imgPath": "thumbnails/nightcrawler.png",
       "link": "https://www.realfast.dk/2015/08/25/nightcrawler/",
       "date": "2015-08-25",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "LudumDare", "2015" ]
     },
     {
@@ -263,14 +298,16 @@
       "imgPath": "thumbnails/planet-hopping.png",
       "link": "https://www.realfast.dk/2020/10/05/planet-hopping/",
       "date": "2020-10-05",
-      "size": 110,
-      "tags": [ "All", "2D", "Gamejam", "LudumDare", "2020" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "LudumDare", "2020" ],
+      "size": 110
     },
     {
       "name": "Dimension Tau",
       "imgPath": "thumbnails/tau.png",
       "link": "https://www.realfast.dk/2014/08/26/enter-dimension-tau/",
       "date": "2014-08-26",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "LudumDare", "2014" ]
     },
     {
@@ -278,6 +315,7 @@
       "imgPath": "thumbnails/transmogrifier.png",
       "link": "https://www.realfast.dk/2016/04/19/the-transmogrifier/",
       "date": "2016-04-19",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2016" ]
     },
     {
@@ -285,6 +323,7 @@
       "imgPath": "thumbnails/truth-employee.png",
       "link": "https://www.realfast.dk/2016/12/12/the-story-of-a-ministry-of-truth-employee/",
       "date": "2016-12-12",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2016" ]
     },
     {
@@ -292,14 +331,16 @@
       "imgPath": "thumbnails/voidlings.png",
       "link": "https://www.realfast.dk/2019/05/01/voidlings/",
       "date": "2019-05-01",
-      "size": 110,
-      "tags": [ "All", "2D", "Gamejam", "NGJ", "2019" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "NGJ", "2019" ],
+      "size": 110
     },
     {
       "name": "Snowball & The Yeti",
       "imgPath": "thumbnails/snowball-yeti.png",
       "link": "https://www.realfast.dk/2020/02/23/snowman-the-yeti/",
       "date": "2020-02-23",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2020" ]
     },
     {
@@ -307,6 +348,7 @@
       "imgPath": "thumbnails/rhythm-castle.png",
       "link": "https://www.realfast.dk/2018/07/03/dancers-of-rhythm-castle/",
       "date": "2018-07-03",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "Otherjam", "2018" ]
     },
     {
@@ -314,14 +356,16 @@
       "imgPath": "thumbnails/police-state.png",
       "link": "https://www.realfast.dk/2018/01/28/a-message-home-in-the-police-state-of-denmark/",
       "date": "2018-01-28",
-      "size": 75,
-      "tags": [ "All", "2D", "Gamejam", "GGJ", "2018" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "GGJ", "2018" ],
+      "size": 75
     },
     {
       "name": "VR King",
       "imgPath": "thumbnails/vrking.png",
       "link": "https://www.realfast.dk/2016/01/31/vr-king/",
       "date": "2016-01-31",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "VR", "Gamejam", "GGJ", "2016" ]
     },
     {
@@ -329,14 +373,16 @@
       "imgPath": "thumbnails/hackerman.png",
       "link": "https://www.realfast.dk/2019/01/03/codename-hackerman/",
       "date": "2019-01-03",
-      "size": 110,
-      "tags": [ "All", "3D", "2019" ]
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "3D", "2019" ],
+      "size": 110
     },
     {
       "name": "Web of Wyrd",
       "imgPath": "thumbnails/webofwyrd-thumb.png",
       "link": "https://www.realfast.dk/2023/02/05/web-of-wyrd/",
       "date": "2023-02-05",
+			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "GGJ", "2023" ]
     }
   ]
