@@ -1,13 +1,27 @@
 var typewriter
 var iframe
 var isTyping = false
+var isSkip = false
 var speed = 10;    
 var pause = 250;    
 var l = 0 
 var p = 0
+var curLink = "intro"
 const linkRegex = new RegExp(/<a\s+(?:[^>]*?\s+)?href=([\S])(?<link>.*?)\1 ?(target="(?<target>_blank)")?>(?<text>[^<]*)<\/a>/, 'g')
 // new RegExp(/<a\s+(?:[^>]*?\s+)?href=(["'])(?<link>.*?)\1>(?<text>[^<]*)<\/a>/, 'g');
 const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');
+
+$(document).on("click", async function () { 
+    skip()
+});
+
+var iframe = $(speechbubble)
+function onStartWriting() {
+    iframe.style="pointer-events: none;"
+}
+function onFinishWriting() {
+    iframe.style="pointer-events: all;"
+}
 
 var writing = false
 var stop = false
@@ -28,9 +42,20 @@ async function finish() {
     pause = pau
 }
 
+async function skip() {
+    const spd = speed, pau = pause
+    speed = pause = 0
+    isSkip = true
+    while(writing) await sleep(10)
+    isSkip = false
+    speed = spd
+    pause = pau
+}
+
 async function write(rawText) {
     writing = true
     var links = []
+    onStartWriting()
 
     // count tags: tag#
     matches = rawText.matchAll(/tag#(?<tag>\S*)/g)
@@ -74,16 +99,32 @@ async function write(rawText) {
             if (stop) break
             await typeText(txt[j])
             if (stop) break
+            if (isSkip) continue
             await sleep(pause)
         }
         await typeLink(lnk.Text, lnk.Link, lnk.Target)
     }
     if (stop) {writing = false;return}
     await typeText(texts[texts.length-1])
+
     writing = false;
+    onFinishWriting()
 }
 
 async function typeText(text) {
+    if (isSkip)
+    {
+        for (let i = 0; i < text.length; i++) {
+            const ch = text.charAt(i)
+            if (ch === '~' || ch === ' ') isTyping = false
+            if (ch === '~') $('#typewriter', $('#speechbubble').contents()).append("<br/>")
+            else            $('#typewriter', $('#speechbubble').contents()).append(ch)
+        }
+        isTyping = false
+        p++
+        return
+    }
+
     for (let i = 0; i < text.length; i++) {
         await sleep(speed).then( () => { 
             if (stop) return
@@ -102,7 +143,15 @@ async function typeLink(text, link, target) {
     var t = target === undefined ? "" : " target='"+target+"' "
     var a = "<a href='"+link+"' id='c"+l+"'"+t+"></a>";
     $('#typewriter', $('#speechbubble').contents()).append(a)
-    
+
+    if (isSkip)
+    {
+        $("#c"+l, $('#speechbubble').contents()).append(text) 
+        isTyping = false
+        l++
+        return
+    }
+
     for (let i = 0; i < text.length; i++) {
         await sleep(speed).then( () => { 
             if (stop) return
@@ -155,6 +204,7 @@ async function setup() {
 }
 
 async function writeLink(link) {
+    curLink = link
     const elmt = iframe.contentWindow.document.getElementById(link)
     await clear()
     curWrite = write(elmt.innerHTML)
