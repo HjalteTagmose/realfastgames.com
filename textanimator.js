@@ -11,7 +11,6 @@ const textRegex = new RegExp(/<a href=[^<]*>[^<]*<\/a>/, 'g');
 
 var writing = false
 var stop = false
-
 async function clear() {
     await finish()
     typewriter.innerHTML = "";
