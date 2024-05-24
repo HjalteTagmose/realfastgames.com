@@ -5,9 +5,9 @@
       "name": "Szrot",
       "imgPath": "thumbnails/szrot.png",
       "link": "https://szrotgame.com/",
-      "date": "N/A",
+      "date": "TBA",
 			"platforms": [ "Windows" ],
-      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "Szrot" ],
+      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "2024", "Szrot" ],
       "size": 200
     },
     {
@@ -15,9 +15,17 @@
       "imgPath": "thumbnails/munchy-mammals.png",
       "link": "https://munchymammals.com/",
       "date": "2023-10-19",
-			"platforms": [ "Windows" ],
+			"platforms": [ "Windows", "iOS", "Android", "MacOS", "Linux", "Switch" ],
       "tags": [ "All", "2D", "2020", "2023", "2024", "Munchy" ],
       "size": 200
+    },
+    {
+      "name": "Sonar Scout",
+      "imgPath": "thumbnails/sonarscout.png",
+      "link": "https://www.realfast.dk/2024/05/12/sonar-scout/",
+      "date": "2024-05-12",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024" ]
     },
     {
       "name": "Hotseat Hoarders",
@@ -168,6 +176,14 @@
       "date": "2020-02-02",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "GGJ", "2020" ]
+    },
+    {
+      "name": "Double Crossing Goblins",
+      "imgPath": "thumbnails/doublecrossinggoblins.png",
+      "link": "https://www.realfast.dk/2024/04/21/double-crossing-goblins/",
+      "date": "2024-04-21",
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "NGJ", "2024" ]
     },
     {
       "name": "ASCII Space Commander",
