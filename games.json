@@ -5,9 +5,9 @@
       "name": "Szrot",
       "imgPath": "thumbnails/szrot.png",
       "link": "https://szrotgame.com/",
-      "date": "TBA",
+      "date": "N/A",
 			"platforms": [ "Windows" ],
-      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "2024", "Szrot" ],
+      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "Szrot" ],
       "size": 200
     },
     {
@@ -22,15 +22,25 @@
     {
       "name": "Sonar Scout",
       "imgPath": "thumbnails/sonarscout.png",
-      "link": "https://www.realfast.dk/2024/05/12/sonar-scout/",
+      "link": "https://hjaltetagmose.itch.io/sonar-scout",
       "date": "2024-05-12",
 			"platforms": [ "Web", "Windows" ],
-      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024" ]
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024" ],
+      "size": 110
+    },
+    {
+      "name": "Floop",
+      "imgPath": "thumbnails/floop.png",
+      "link": "https://hjaltetagmose.itch.io/floop",
+      "date": "2024-06-21",
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024" ],
+      "size": 110
     },
     {
       "name": "Hotseat Hoarders",
       "imgPath": "thumbnails/hotseathoarders.png",
-      "link": "https://www.realfast.dk/2022/01/30/hotseat-hoarders/",
+      "link": "https://v3.globalgamejam.org/2022/games/hotseat-hoarders-8",
       "date": "2022-01-30",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "3D", "GGJ", "2022" ]
@@ -38,7 +48,7 @@
     {
       "name": "Push My Buttons",
       "imgPath": "thumbnails/pushmybuttons.PNG",
-      "link": "https://www.realfast.dk/2023/10/31/push-my-buttons/",
+      "link": "https://horatiuromantic.itch.io/push-my-buttons",
       "date": "2023-10-31",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
@@ -46,7 +56,7 @@
     {
       "name": "Par None",
       "imgPath": "thumbnails/par-none.png",
-      "link": "https://www.realfast.dk/2023/10/02/par-none/",
+      "link": "https://ldjam.com/events/ludum-dare/54/golf-game",
       "date": "2023-10-02",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
@@ -54,7 +64,7 @@
     {
       "name": "Roundabout Rally",
       "imgPath": "thumbnails/roundabout-rally.png",
-      "link": "https://www.realfast.dk/2023/10/31/roundabout-rally/",
+      "link": "https://hjaltetagmose.itch.io/roundabout-rally",
       "date": "2023-10-31",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2023" ]
@@ -62,7 +72,7 @@
     {
       "name": "Ballz",
       "imgPath": "thumbnails/ballz.png",
-      "link": "https://www.realfast.dk/2021/08/02/ballz/",
+      "link": "https://hjaltetagmose.itch.io/ballz",
       "date": "2021-08-02",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2021" ]
@@ -70,7 +80,7 @@
     {
       "name": "Rival Sniper",
       "imgPath": "thumbnails/rivalsniper.png",
-      "link": "https://www.realfast.dk/2021/10/04/rival-sniper/",
+      "link": "https://hjaltetagmose.itch.io/rival-sniper",
       "date": "2021-10-04",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "LudumDare", "2021" ]
@@ -78,7 +88,7 @@
     {
       "name": "Hitch Bird",
       "imgPath": "thumbnails/hitch.png",
-      "link": "https://www.realfast.dk/2018/08/13/hitch-bird/",
+      "link": "https://ldjam.com/events/ludum-dare/42/hitch-bird",
       "date": "2018-08-13",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "3D", "LudumDare", "2018" ]
@@ -86,7 +96,7 @@
     {
       "name": "Ski Racer",
       "imgPath": "thumbnails/skiracer.png",
-      "link": "https://www.realfast.dk/2019/03/27/ski-racer/",
+      "link": "https://hjaltetagmose.itch.io/ski-racer",
       "date": "2019-03-27",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "Trainjam", "2019" ],
@@ -95,7 +105,7 @@
     {
       "name": "Party Crasher Buffet",
       "imgPath": "thumbnails/partycrasherbuffet.png",
-      "link": "https://www.realfast.dk/2024/01/29/party-crasher-buffet/",
+      "link": "https://hjaltetagmose.itch.io/party-crasher-buffet",
       "date": "2024-01-29",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "GGJ", "2024" ],
@@ -104,7 +114,7 @@
     {
       "name": "My Friend in the Lake",
       "imgPath": "thumbnails/myfriendinthelake.png",
-      "link": "https://www.realfast.dk/2024/01/29/party-crasher-buffet/",
+      "link": "https://hjaltetagmose.itch.io/my-friend-in-the-lake",
       "date": "2024-03-14",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2024" ],
@@ -113,7 +123,7 @@
     {
       "name": "Astro Tube",
       "imgPath": "thumbnails/astrotube.png",
-      "link": "https://www.realfast.dk/2016/05/05/astro-tube/",
+      "link": "https://hjaltetagmose.itch.io/astro-tube",
       "date": "2016-05-05",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2016" ]
@@ -121,7 +131,7 @@
     {
       "name": "Daffodil Village",
       "imgPath": "thumbnails/daffodil.png",
-      "link": "https://www.realfast.dk/2017/04/24/daffodil-village/",
+      "link": "https://ldjam.com/events/ludum-dare/38/daffodil-village",
       "date": "2017-04-24",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2017" ],
@@ -130,7 +140,7 @@
     {
       "name": "Hack & Drive",
       "imgPath": "thumbnails/hack-drive.png",
-      "link": "https://www.realfast.dk/2017/11/20/hack-and-drive/",
+      "link": "https://hjaltetagmose.itch.io/hack-and-drive",
       "date": "2017-11-20",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "Otherjam", "2017" ]
@@ -138,7 +148,7 @@
     {
       "name": "The Replacement",
       "imgPath": "thumbnails/thereplacement.png",
-      "link": "https://www.realfast.dk/2017/02/25/the-replacement/",
+      "link": "https://hjaltetagmose.itch.io/the-replacement",
       "date": "2017-02-25",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2017" ]
@@ -146,7 +156,7 @@
     {
       "name": "Shipping Schrödringers Cat",
       "imgPath": "thumbnails/ship-cat.png",
-      "link": "https://www.realfast.dk/2020/04/20/ship-cat/",
+      "link": "https://ldjam.com/events/ludum-dare/46/shipping-schrodingers-cat",
       "date": "2020-04-20",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "LudumDare", "2020" ],
@@ -155,7 +165,7 @@
     {
       "name": "Robo Drainer",
       "imgPath": "thumbnails/robo-drainer.png",
-      "link": "https://www.realfast.dk/2017/08/01/510/",
+      "link": "https://ldjam.com/events/ludum-dare/39/robo-drainer",
       "date": "2017-08-01",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2017" ],
@@ -164,7 +174,7 @@
     {
       "name": "Defuser 4000",
       "imgPath": "thumbnails/defuser4000.png",
-      "link": "https://www.realfast.dk/2015/12/15/defuser-4000/",
+      "link": "https://web.archive.org/web/20201201235857/http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=41033",
       "date": "2015-12-15",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2015" ]
@@ -172,7 +182,7 @@
     {
       "name": "Aquanaut",
       "imgPath": "thumbnails/aquanaut.png",
-      "link": "https://www.realfast.dk/2020/02/02/aquanaut/",
+      "link": "https://v3.globalgamejam.org/2020/games/aquanaut-6",
       "date": "2020-02-02",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "GGJ", "2020" ]
@@ -180,7 +190,7 @@
     {
       "name": "Double Crossing Goblins",
       "imgPath": "thumbnails/doublecrossinggoblins.png",
-      "link": "https://www.realfast.dk/2024/04/21/double-crossing-goblins/",
+      "link": "https://hjaltetagmose.itch.io/goblin",
       "date": "2024-04-21",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "NGJ", "2024" ]
@@ -188,7 +198,7 @@
     {
       "name": "ASCII Space Commander",
       "imgPath": "thumbnails/asciispacecmd.png",
-      "link": "https://www.realfast.dk/2018/04/24/695/",
+      "link": "https://ldjam.com/events/ludum-dare/41/ascii-space-commander",
       "date": "2018-04-24",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2018" ]
@@ -196,7 +206,7 @@
     {
       "name": "The Blind Burglar",
       "imgPath": "thumbnails/blindburglar-thumb.png",
-      "link": "https://www.realfast.dk/2017/01/22/the-blind-burglar/",
+      "link": "https://v3.globalgamejam.org/2017/games/blind-burglar",
       "date": "2017-01-22",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "GGJ", "2017" ],
@@ -205,7 +215,7 @@
     {
       "name": "Should've Listened",
       "imgPath": "thumbnails/shouldvelistened.png",
-      "link": "https://www.realfast.dk/2022/04/29/shouldve-listened/",
+      "link": "https://hjaltetagmose.itch.io/1audio1visual",
       "date": "2022-04-29",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "NGJ", "2022" ],
@@ -214,7 +224,7 @@
     {
       "name": "Cat Tales",
       "imgPath": "thumbnails/cat-tale.png",
-      "link": "https://www.realfast.dk/2018/03/23/cat-tales/",
+      "link": "https://hjaltetagmose.itch.io/cat-tales",
       "date": "2018-03-23",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Trainjam", "2018" ],
@@ -223,7 +233,7 @@
     {
       "name": "Despot Dungeons",
       "imgPath": "thumbnails/despot-dungeons.png",
-      "link": "https://www.realfast.dk/2017/10/02/despot-dungeons/",
+      "link": "https://hjaltetagmose.itch.io/despot-dungeons",
       "date": "2017-10-02",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Pixelart", "2017" ],
@@ -232,7 +242,7 @@
     {
       "name": "Escape from Finger Castle.png",
       "imgPath": "thumbnails/finger-castle.png",
-      "link": "https://www.realfast.dk/2016/10/10/escape-from-finger-castle/",
+      "link": "https://hjaltetagmose.itch.io/escape-from-finger-castle",
       "date": "2016-10-10",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2016" ]
@@ -240,7 +250,7 @@
     {
       "name": "Fractal City",
       "imgPath": "thumbnails/fractal.png",
-      "link": "https://www.realfast.dk/2019/04/11/fractal-city/",
+      "link": "https://hjaltetagmose.itch.io/fractal-city",
       "date": "2019-04-11",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2019" ]
@@ -248,7 +258,7 @@
     {
       "name": "The Quest for the Golden Sword",
       "imgPath": "thumbnails/golden-sword.png",
-      "link": "https://www.realfast.dk/2014/12/16/the-quest-for-the-golden-sword/",
+      "link": "https://hjaltetagmose.itch.io/the-quest-for-the-golden-sword",
       "date": "2014-12-16",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "2014" ]
@@ -256,7 +266,7 @@
     {
       "name": "Houdini Plumbing",
       "imgPath": "thumbnails/houdini-plumb.png",
-      "link": "https://www.realfast.dk/2016/04/11/123/",
+      "link": "https://hjaltetagmose.itch.io/houdini-plumbing",
       "date": "2016-04-11",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "NGJ", "2016" ]
@@ -264,7 +274,7 @@
     {
       "name": "Late Fee",
       "imgPath": "thumbnails/latefee.png",
-      "link": "https://www.realfast.dk/2016/08/30/the-late-fee/",
+      "link": "https://web.archive.org/web/20210226235221/http://ludumdare.com/compo/ludum-dare-36/?action=preview&uid=41033",
       "date": "2016-08-30",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2016" ]
@@ -272,7 +282,7 @@
     {
       "name": "Last Minute Assignment",
       "imgPath": "thumbnails/lma.png",
-      "link": "https://www.realfast.dk/2017/06/21/last-minute-assignment/",
+      "link": "https://hjaltetagmose.itch.io/last-minute-assignment",
       "date": "2017-06-21",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2017" ]
@@ -280,7 +290,7 @@
     {
       "name": "Mirror",
       "imgPath": "thumbnails/mirror.png",
-      "link": "https://www.realfast.dk/2013/06/20/mirror/",
+      "link": "https://hjaltetagmose.itch.io/mirror",
       "date": "2013-06-20",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2014" ]
@@ -288,7 +298,7 @@
     {
       "name": "Necro Chasm",
       "imgPath": "thumbnails/necro-chasm.png",
-      "link": "https://www.realfast.dk/2014/12/09/necro-chasm/",
+      "link": "https://web.archive.org/web/20200810112116/http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=41033",
       "date": "2014-12-09",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2014" ]
@@ -296,7 +306,7 @@
     {
       "name": "The Neverending Fountain of Puke",
       "imgPath": "thumbnails/neverending-puke.png",
-      "link": "https://www.realfast.dk/2015/04/21/the-neverending-fountain-of-puke/",
+      "link": "https://web.archive.org/web/20201101020730/http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=41033",
       "date": "2015-04-21",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2015" ]
@@ -304,7 +314,7 @@
     {
       "name": "Nightcrawler",
       "imgPath": "thumbnails/nightcrawler.png",
-      "link": "https://www.realfast.dk/2015/08/25/nightcrawler/",
+      "link": "https://web.archive.org/web/20210420112728/http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=41033",
       "date": "2015-08-25",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "LudumDare", "2015" ]
@@ -312,16 +322,16 @@
     {
       "name": "Planet Hopping",
       "imgPath": "thumbnails/planet-hopping.png",
-      "link": "https://www.realfast.dk/2020/10/05/planet-hopping/",
+      "link": "https://hjaltetagmose.itch.io/planet-hopping",
       "date": "2020-10-05",
-			"platforms": [ "Windows" ],
+			"platforms": [ "Windows", "Web" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2020" ],
       "size": 110
     },
     {
       "name": "Dimension Tau",
       "imgPath": "thumbnails/tau.png",
-      "link": "https://www.realfast.dk/2014/08/26/enter-dimension-tau/",
+      "link": "https://web.archive.org/web/20210227164411/http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=41033",
       "date": "2014-08-26",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "LudumDare", "2014" ]
@@ -329,7 +339,7 @@
     {
       "name": "Transmogrifier",
       "imgPath": "thumbnails/transmogrifier.png",
-      "link": "https://www.realfast.dk/2016/04/19/the-transmogrifier/",
+      "link": "https://web.archive.org/web/20200810115839/http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=41033",
       "date": "2016-04-19",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2016" ]
@@ -337,7 +347,7 @@
     {
       "name": "The Story of a Ministry of Truth Employee",
       "imgPath": "thumbnails/truth-employee.png",
-      "link": "https://www.realfast.dk/2016/12/12/the-story-of-a-ministry-of-truth-employee/",
+      "link": "https://web.archive.org/web/20201031200642/http://ludumdare.com/compo/ludum-dare-37/?action=preview&uid=41033",
       "date": "2016-12-12",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "LudumDare", "2016" ]
@@ -345,7 +355,7 @@
     {
       "name": "Voidlings",
       "imgPath": "thumbnails/voidlings.png",
-      "link": "https://www.realfast.dk/2019/05/01/voidlings/",
+      "link": "https://skovtrolden.itch.io/voidlings",
       "date": "2019-05-01",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "NGJ", "2019" ],
@@ -354,7 +364,7 @@
     {
       "name": "Snowball & The Yeti",
       "imgPath": "thumbnails/snowball-yeti.png",
-      "link": "https://www.realfast.dk/2020/02/23/snowman-the-yeti/",
+      "link": "https://hjaltetagmose.itch.io/snowball-yeti",
       "date": "2020-02-23",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "Otherjam", "2020" ]
@@ -362,7 +372,7 @@
     {
       "name": "Dancers of Rhythm Castle",
       "imgPath": "thumbnails/rhythm-castle.png",
-      "link": "https://www.realfast.dk/2018/07/03/dancers-of-rhythm-castle/",
+      "link": "https://hjaltetagmose.itch.io/dancers-of-rhythm-castle",
       "date": "2018-07-03",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "Gamejam", "Otherjam", "2018" ]
@@ -370,7 +380,7 @@
     {
       "name": "A Message Home in the Police State of Denmark",
       "imgPath": "thumbnails/police-state.png",
-      "link": "https://www.realfast.dk/2018/01/28/a-message-home-in-the-police-state-of-denmark/",
+      "link": "https://v3.globalgamejam.org/2018/games/message-home-police-state-denmark",
       "date": "2018-01-28",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "GGJ", "2018" ],
@@ -379,7 +389,7 @@
     {
       "name": "VR King",
       "imgPath": "thumbnails/vrking.png",
-      "link": "https://www.realfast.dk/2016/01/31/vr-king/",
+      "link": "https://v3.globalgamejam.org/2016/games/vr-king",
       "date": "2016-01-31",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "VR", "Gamejam", "GGJ", "2016" ]
@@ -387,7 +397,7 @@
     {
       "name": "Hackerman",
       "imgPath": "thumbnails/hackerman.png",
-      "link": "https://www.realfast.dk/2019/01/03/codename-hackerman/",
+      "link": "https://hjaltetagmose.itch.io/hackerman",
       "date": "2019-01-03",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "3D", "2019" ],
@@ -396,7 +406,7 @@
     {
       "name": "Web of Wyrd",
       "imgPath": "thumbnails/webofwyrd-thumb.png",
-      "link": "https://www.realfast.dk/2023/02/05/web-of-wyrd/",
+      "link": "https://hjaltetagmose.itch.io/web-of-wyrd",
       "date": "2023-02-05",
 			"platforms": [ "Windows" ],
       "tags": [ "All", "2D", "Gamejam", "GGJ", "2023" ]
