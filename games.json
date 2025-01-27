@@ -188,6 +188,14 @@
       "tags": [ "All", "3D", "Gamejam", "GGJ", "2020" ]
     },
     {
+      "name": "Bubble Yaga",
+      "imgPath": "thumbnails/bubble-yaga.png",
+      "link": "https://globalgamejam.org/games/2025/witch-bubbles-5",
+      "date": "2025-01-26",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "2D", "Gamejam", "GGJ", "2025" ]
+    },
+    {
       "name": "Double Crossing Goblins",
       "imgPath": "thumbnails/doublecrossinggoblins.png",
       "link": "https://hjaltetagmose.itch.io/goblin",
