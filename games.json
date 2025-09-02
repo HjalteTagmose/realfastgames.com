@@ -2,31 +2,49 @@
   "sizeMultiplier": 1.25,
   "boxes": [
     {
-      "name": "Szrot",
-      "imgPath": "thumbnails/szrot.png",
-      "link": "https://szrotgame.com/",
-      "date": "N/A",
-			"platforms": [ "Windows" ],
-      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "Szrot" ],
-      "size": 200
-    },
-    {
       "name": "Munchy Mammals",
       "imgPath": "thumbnails/munchy-mammals.png",
       "link": "https://munchymammals.com/",
       "date": "2023-10-19",
 			"platforms": [ "Windows", "iOS", "Android", "MacOS", "Linux", "Switch" ],
       "tags": [ "All", "2D", "2020", "2023", "2024", "Munchy" ],
-      "size": 200
+      "size": 175
+    },
+    {
+      "name": "Omelet You Cook",
+      "imgPath": "thumbnails/omelet_you_cook.png",
+      "link": "https://store.steampowered.com/app/3205380/Omelet_You_Cook/",
+      "date": "2025-06-07",
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "2D", "2025", "Omelet" ],
+      "size": 175
     },
     {
       "name": "Sonar Scout",
       "imgPath": "thumbnails/sonarscout.png",
-      "link": "https://hjaltetagmose.itch.io/sonar-scout",
+      "link": "https://store.steampowered.com/app/3137740/Sonar_Scout/",
       "date": "2024-05-12",
-			"platforms": [ "Web", "Windows" ],
-      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024" ],
-      "size": 110
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024", "Sonar" ],
+      "size": 150
+    },
+    {
+      "name": "CraftCraft",
+      "imgPath": "thumbnails/craftcraft.png",
+      "link": "https://store.steampowered.com/app/2226430/CraftCraft_Fantasy_Merchant_Simulator/",
+      "date": "2025-05-29",
+			"platforms": [ "Windows", "MacOS" ],
+      "tags": [ "All", "2D", "2024", "2025" ],
+      "size": 125
+    },
+    {
+      "name": "Szrot",
+      "imgPath": "thumbnails/szrot.png",
+      "link": "https://szrotgame.com/",
+      "date": "N/A",
+			"platforms": [ "Windows" ],
+      "tags": [ "All", "Current", "3D", "2021", "2022", "2023", "2024", "Szrot" ],
+      "size": 150
     },
     {
       "name": "Floop",
@@ -36,6 +54,50 @@
 			"platforms": [ "Windows" ],
       "tags": [ "All", "Gamejam", "2D", "Otherjam", "2024" ],
       "size": 110
+    },
+    {
+      "name": "Dillaball",
+      "imgPath": "thumbnails/dillaball.png",
+      "link": "https://hjaltetagmose.itch.io/dillaball",
+      "date": "2025-06-22",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2025" ],
+      "size": 110
+    },
+    {
+      "name": "Lil Dude Racing",
+      "imgPath": "thumbnails/lil_dude_racing.png",
+      "link": "https://hjaltetagmose.itch.io/lil-dude-racers",
+      "date": "2025-08-03",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2025" ],
+      "size": 110
+    },
+    {
+      "name": "The Big Dig",
+      "imgPath": "thumbnails/the_big_dig.png",
+      "link": "https://schubox.itch.io/the-big-dig",
+      "date": "2025-08-31",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2025" ],
+      "size": 110
+    },
+    {
+      "name": "They Come at Night",
+      "imgPath": "thumbnails/they_come_at_night.png",
+      "link": "https://hjaltetagmose.itch.io/they-come-at-night",
+      "date": "2025-05-05",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "Otherjam", "2025" ],
+      "size": 110
+    },
+    {
+      "name": "Spelware",
+      "imgPath": "thumbnails/spelware.png",
+      "link": "https://manfish3am.itch.io/spelware",
+      "date": "2025-08-17",
+			"platforms": [ "Web", "Windows" ],
+      "tags": [ "All", "Gamejam", "2D", "3D", "Otherjam", "2025" ]
     },
     {
       "name": "Hotseat Hoarders",
